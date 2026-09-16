@@ -1,7 +1,7 @@
 import './Greetings.sass';
 
 const Greetings = () => <div class="hello">
-	<h1>Welcome!</h1>
+	<h2>Welcome!</h2>
 </div>
 
 export default Greetings;
