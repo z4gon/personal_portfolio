@@ -9,10 +9,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@astrojs/preact": "6.0.5",
     "astro": "7.3.2"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "prettier-plugin-astro": "1.0.0"
   }
 }
