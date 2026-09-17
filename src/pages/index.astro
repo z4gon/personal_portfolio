@@ -1,5 +1,6 @@
 ---
 import Greetings from "../components/Greetings";
+import Counter from "../components/Counter";
 import { getCollection } from 'astro:content';
 
 // Get all entries from a collection.
@@ -22,6 +23,7 @@ console.log("This runs in your terminal, not the browser!");
         <a href={`/blog/${x.data.slug}`}>{x.data.title}</a>
       </p>)
     }
+    <Counter client:load />
   </body>
 </html>
 <style>
