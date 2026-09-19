@@ -1,7 +1,6 @@
 ---
 title: "Videogames"
 description: "Recommended videogames to play."
-slug: "videogames"
 createdDate: 2024-06-18
 updatedDate: 2024-06-18
 ---
