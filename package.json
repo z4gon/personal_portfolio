@@ -4,8 +4,6 @@
   "description": "wip",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "",
   "overrides": {
     "react": "npm:@preact/compat@latest",
     "react-dom": "npm:@preact/compat@latest"
