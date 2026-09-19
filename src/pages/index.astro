@@ -1,11 +1,11 @@
 ---
 import Greetings from "../components/Greetings";
 import Counter from "../components/Counter";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
-const allBlogPosts = await getCollection('blog');
+const allBlogPosts = await getCollection("blog");
 
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
@@ -18,11 +18,11 @@ console.log("This runs in your terminal, not the browser!");
   <body>
     <h1>Hello, World!</h1>
     <Greetings />
-    {
-      allBlogPosts.map(x => <p>
+    {allBlogPosts.map((x) => (
+      <p>
         <a href={`/blog/${x.data.slug}`}>{x.data.title}</a>
-      </p>)
-    }
+      </p>
+    ))}
     <Counter client:load />
   </body>
 </html>

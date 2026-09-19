@@ -6,6 +6,7 @@ updatedDate: 2024-06-18
 ---
 
 ## Fun Activities
+
 - Reading a book
 - Watching movies
 - Playing board games
