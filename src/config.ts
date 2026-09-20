@@ -8,3 +8,4 @@ export const site = {
 
 // Google Analytics measurement ID
 export const gaMeasurementId = "G-NPBT98N1FD";
+export const githubUrl = "https://github.com/z4gon";
