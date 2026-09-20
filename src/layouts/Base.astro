@@ -1,0 +1,41 @@
+---
+import Metatags from "../components/page/Metatags.astro";
+import GoogleAnalytics from "../components/page/GoogleAnalytics.astro";
+import "../styles/global/index.sass";
+
+// page-level overrides, falling back to site config (inside Metatags)
+interface Props {
+  title?: string;
+  description?: string;
+  imagePath?: string;
+}
+
+const { title, description, imagePath } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {/* basics: encoding + mobile rendering */}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* SEO + social cards: title, description, canonical, og:*, favicon */}
+    <Metatags
+      path={Astro.url.pathname}
+      title={title}
+      description={description}
+      imagePath={imagePath}
+    />
+    {/* Open Sans webfont */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <GoogleAnalytics />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

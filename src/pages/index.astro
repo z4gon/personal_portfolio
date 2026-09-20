@@ -1,4 +1,6 @@
 ---
+import Base from "../layouts/Base.astro";
+import Page from "../layouts/Page.astro";
 import Greetings from "../components/Greetings";
 import Counter from "../components/Counter";
 import { getCollection } from "astro:content";
@@ -6,26 +8,20 @@ import { getCollection } from "astro:content";
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
 const allBlogPosts = await getCollection("blog");
-
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log("This runs in your terminal, not the browser!");
 ---
 
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
+<Base>
+  <Page>
     <h1>Hello, World!</h1>
     <Greetings />
     {allBlogPosts.map((x) => (
       <p>
-        <a href={`/blog/${x.data.slug}`}>{x.data.title}</a>
+        <a href={`/blog/${x.id}`}>{x.data.title}</a>
       </p>
     ))}
     <Counter client:load />
-  </body>
-</html>
+  </Page>
+</Base>
 <style>
   h1 {
     color: orange;

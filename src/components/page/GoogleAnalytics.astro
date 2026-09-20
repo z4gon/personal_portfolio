@@ -1,0 +1,26 @@
+---
+import { gaMeasurementId } from "../../config";
+
+// Global site tag (gtag.js) - Google Analytics
+// only track in production builds, keep dev pageviews out of analytics
+---
+
+{import.meta.env.PROD && (
+  <>
+    <script
+      id="google-analytics-setup"
+      src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+      async
+      is:inline
+    ></script>
+    {/* define:vars serializes the id into the script (frontmatter vars aren't interpolated in is:inline scripts) */}
+    <script id="google-analytics" define:vars={{ gaMeasurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gaMeasurementId);
+    </script>
+  </>
+)}
