@@ -1,0 +1,44 @@
+name: "Format + Build + Deploy"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  format-build:
+    name: Format Check + Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: format-build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # We build twice on purpose — it's fast and keeps this job standalone.
+      # If that changes, pass dist via an artifact instead.
+      - run: touch dist/.nojekyll
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # The folder the action should deploy.
+          branch: gh-pages # The branch to push to.
