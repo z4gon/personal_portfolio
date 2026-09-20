@@ -1,4 +1,4 @@
-import "./Greetings.sass";
+import "./Greetings.scss";
 
 const Greetings = () => (
   <div class="hello">
