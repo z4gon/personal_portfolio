@@ -2,7 +2,7 @@ import type { FunctionalComponent } from "preact";
 import styles from "./IconLink.module.scss";
 
 interface IconLinkProps {
-  Icon: FunctionalComponent<{ className?: string | undefined }>;
+  Icon: FunctionalComponent<{ className?: string }>;
   href: string;
 }
 

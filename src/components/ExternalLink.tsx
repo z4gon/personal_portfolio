@@ -6,7 +6,7 @@ import { classNames } from "../utils/classNames";
 interface ExternalLinkProps {
   href: string;
   className?: string;
-  Icon?: FunctionalComponent<{ className?: string | undefined }>;
+  Icon?: FunctionalComponent<{ className?: string }>;
   children: ComponentChildren;
 }
 

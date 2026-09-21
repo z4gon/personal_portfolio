@@ -3,9 +3,9 @@ import { site } from "../../config";
 // page-level overrides, falling back to site config
 interface MetatagsProps {
   path: string;
-  title?: string | undefined;
-  description?: string | undefined;
-  imagePath?: string | undefined;
+  title?: string;
+  description?: string;
+  imagePath?: string;
 }
 
 const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {

@@ -1,8 +1,4 @@
-const ExternalLinkIcon = ({
-  className,
-}: {
-  className?: string | undefined;
-}) => (
+const ExternalLinkIcon = ({ className }: { className?: string }) => (
   <svg
     className={className}
     fill="#000000"
