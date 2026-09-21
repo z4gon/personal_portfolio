@@ -1,12 +1,15 @@
-name: "Format + Build + Deploy"
+name: "CI"
 
 on:
   push:
     branches: [main]
   pull_request:
 
+env:
+  ASTRO_TELEMETRY_DISABLED: 1
+
 jobs:
-  format-build:
+  check:
     name: Format Check + Build
     runs-on: ubuntu-latest
     steps:
@@ -20,9 +23,21 @@ jobs:
       - run: npm run format:check
       - run: npm run build
 
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run test
+
   deploy:
     name: Deploy to GitHub Pages
-    needs: format-build
+    needs: [check, test]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:
       contents: write

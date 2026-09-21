@@ -1,6 +1,6 @@
-import type { ComponentChildren } from "preact";
+import type { AnchorHTMLAttributes, ComponentChildren } from "preact";
 
-interface LinkProps {
+interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
   newTab?: boolean;
   className?: string;
@@ -11,12 +11,19 @@ interface LinkProps {
  * Base link component. Renders a plain anchor;
  * set `newTab` to open in a new tab (adding noopener noreferrer).
  */
-export const Link = ({ href, newTab, className, children }: LinkProps) => (
+export const Link = ({
+  href,
+  newTab,
+  className,
+  children,
+  ...rest
+}: LinkProps) => (
   <a
     href={href}
     target={newTab ? "_blank" : undefined}
     rel={newTab ? "noopener noreferrer" : undefined}
     className={className}
+    {...rest}
   >
     {children}
   </a>

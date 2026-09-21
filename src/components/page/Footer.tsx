@@ -6,6 +6,7 @@ import styles from "./Footer.module.scss";
 const icons = [
   {
     href: githubUrl,
+    label: "GitHub profile",
     Icon: GitHubIcon,
   },
 ];

@@ -7,6 +7,7 @@ import { githubUser, githubUrl } from "../../config";
 const icons = [
   {
     href: githubUrl,
+    label: "GitHub profile",
     Icon: GitHubIcon,
   },
 ];
@@ -17,18 +18,14 @@ const NavBar = () => {
       <ul className={styles.links}>
         <li>
           <Link href="/" className={styles.titleLink}>
-            <h1 className={styles.title}>{githubUser}</h1>
+            {githubUser}
           </Link>
         </li>
         <li className={styles.secondaryLink}>
-          <Link href="/">
-            <h1>Portfolio</h1>
-          </Link>
+          <Link href="/">Portfolio</Link>
         </li>
         <li className={styles.secondaryLink}>
-          <Link href="/blog">
-            <h1>Blog</h1>
-          </Link>
+          <Link href="/blog">Blog</Link>
         </li>
       </ul>
       <ul className={styles.icons}>
