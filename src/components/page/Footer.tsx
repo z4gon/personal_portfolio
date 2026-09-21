@@ -1,15 +1,15 @@
-import IconLink from "../link/IconLink";
-import GitHubIcon from "../icons/GitHubIcon";
-import { githubUser, githubUrl } from "../../config";
-import styles from "./Footer.module.scss";
+import IconLink from '../link/IconLink'
+import GitHubIcon from '../icons/GitHubIcon'
+import { githubUser, githubUrl } from '../../config'
+import styles from './Footer.module.scss'
 
 const icons = [
   {
     href: githubUrl,
-    label: "GitHub profile",
+    label: 'GitHub profile',
     Icon: GitHubIcon,
   },
-];
+]
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
         ))}
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

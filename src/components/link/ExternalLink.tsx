@@ -1,14 +1,14 @@
-import type { FunctionalComponent, ComponentChildren } from "preact";
-import styles from "./ExternalLink.module.scss";
-import ExternalLinkIcon from "../icons/ExternalLinkIcon";
-import classNames from "../../utils/classNames";
-import Link from "./Link";
+import type { FunctionalComponent, ComponentChildren } from 'preact'
+import styles from './ExternalLink.module.scss'
+import ExternalLinkIcon from '../icons/ExternalLinkIcon'
+import classNames from '../../utils/classNames'
+import Link from './Link'
 
 interface ExternalLinkProps {
-  href: string;
-  className?: string;
-  Icon?: FunctionalComponent<{ className?: string }>;
-  children: ComponentChildren;
+  href: string
+  className?: string
+  Icon?: FunctionalComponent<{ className?: string }>
+  children: ComponentChildren
 }
 
 const ExternalLink = ({
@@ -30,7 +30,7 @@ const ExternalLink = ({
         <ExternalLinkIcon className={styles.iconSvg} />
       )}
     </Link>
-  );
-};
+  )
+}
 
-export default ExternalLink;
+export default ExternalLink

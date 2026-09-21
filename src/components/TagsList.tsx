@@ -1,10 +1,10 @@
-import Tag from "./Tag";
-import styles from "./TagsList.module.scss";
+import Tag from './Tag'
+import styles from './TagsList.module.scss'
 
 interface TagsListProps {
-  tags: string[];
-  secondary?: boolean;
-  dark?: boolean;
+  tags: string[]
+  secondary?: boolean
+  dark?: boolean
 }
 
 const TagsList = ({ tags, secondary = false, dark = false }: TagsListProps) => {
@@ -16,7 +16,7 @@ const TagsList = ({ tags, secondary = false, dark = false }: TagsListProps) => {
         </Tag>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default TagsList;
+export default TagsList

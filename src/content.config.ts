@@ -1,9 +1,9 @@
-import { defineCollection } from "astro:content";
+import { defineCollection } from 'astro:content'
 import {
   glob,
   // , file
-} from "astro/loaders";
-import { z } from "astro/zod";
+} from 'astro/loaders'
+import { z } from 'astro/zod'
 
 // zod schema
 const blogPostSchema = z.object({
@@ -11,7 +11,7 @@ const blogPostSchema = z.object({
   description: z.string(),
   createdDate: z.coerce.date(),
   updatedDate: z.coerce.date().optional(),
-});
+})
 
 // id = file path slugified (github-slugger):
 //   "My Great Post.md"   -> "my-great-post"  (spaces -> dashes, lowercased)
@@ -19,8 +19,8 @@ const blogPostSchema = z.object({
 //   "snake_case_name.md" -> "snake_case_name" (underscores kept)
 // Use `generateId` or frontmatter `slug` to override.
 const blog = defineCollection({
-  loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
+  loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
   schema: blogPostSchema,
-});
+})
 
-export const collections = { blog };
+export const collections = { blog }

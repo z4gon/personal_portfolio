@@ -1,19 +1,19 @@
 ---
-import Metatags from "../components/page/Metatags";
-import "../styles/index.scss";
-import { gaMeasurementId } from "../config";
+import Metatags from '../components/page/Metatags'
+import '../styles/index.scss'
+import { gaMeasurementId } from '../config'
 
 // page-level overrides, falling back to site config (inside Metatags)
 interface Props {
-  title?: string;
-  description?: string;
-  imagePath?: string;
+  title?: string
+  description?: string
+  imagePath?: string
 }
 
-const { title, description, imagePath } = Astro.props;
+const { title, description, imagePath } = Astro.props
 
 // track only production builds
-const useAnalytics = import.meta.env.PROD;
+const useAnalytics = import.meta.env.PROD
 ---
 
 <!doctype html>
@@ -47,12 +47,12 @@ const useAnalytics = import.meta.env.PROD;
           is:inline
         ></script>
         <script id="google-analytics" define:vars={{ gaMeasurementId }}>
-          window.dataLayer = window.dataLayer || [];
+          window.dataLayer = window.dataLayer || []
           function gtag() {
-            dataLayer.push(arguments);
+            dataLayer.push(arguments)
           }
-          gtag("js", new Date());
-          gtag("config", gaMeasurementId);
+          gtag('js', new Date())
+          gtag('config', gaMeasurementId)
         </script>
       </>
     )}

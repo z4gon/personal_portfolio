@@ -1,16 +1,16 @@
-import IconLink from "../link/IconLink";
-import GitHubIcon from "../icons/GitHubIcon";
-import Link from "../link/Link";
-import styles from "./NavBar.module.scss";
-import { githubUser, githubUrl } from "../../config";
+import IconLink from '../link/IconLink'
+import GitHubIcon from '../icons/GitHubIcon'
+import Link from '../link/Link'
+import styles from './NavBar.module.scss'
+import { githubUser, githubUrl } from '../../config'
 
 const icons = [
   {
     href: githubUrl,
-    label: "GitHub profile",
+    label: 'GitHub profile',
     Icon: GitHubIcon,
   },
-];
+]
 
 const NavBar = () => {
   return (
@@ -36,7 +36,7 @@ const NavBar = () => {
         ))}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

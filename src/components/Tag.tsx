@@ -1,12 +1,12 @@
-import type { ComponentChildren } from "preact";
-import styles from "./Tag.module.scss";
-import classNames from "../utils/classNames";
+import type { ComponentChildren } from 'preact'
+import styles from './Tag.module.scss'
+import classNames from '../utils/classNames'
 
 interface TagProps {
-  children?: ComponentChildren;
-  className?: string;
-  secondary?: boolean;
-  dark?: boolean;
+  children?: ComponentChildren
+  className?: string
+  secondary?: boolean
+  dark?: boolean
 }
 
 const Tag = ({
@@ -23,6 +23,6 @@ const Tag = ({
   >
     {children}
   </span>
-);
+)
 
-export default Tag;
+export default Tag

@@ -1,23 +1,23 @@
-import { site } from "../../config";
+import { site } from '../../config'
 
 // page-level overrides, falling back to site config
 interface MetatagsProps {
-  path: string;
-  title?: string;
-  description?: string;
-  imagePath?: string;
+  path: string
+  title?: string
+  description?: string
+  imagePath?: string
 }
 
 const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {
-  const title = siteOverrides.title ?? site.title;
-  const description = siteOverrides.description ?? site.description;
-  const imagePath = siteOverrides.imagePath ?? site.imagePath;
+  const title = siteOverrides.title ?? site.title
+  const description = siteOverrides.description ?? site.description
+  const imagePath = siteOverrides.imagePath ?? site.imagePath
 
-  const siteUrl = import.meta.env.SITE;
+  const siteUrl = import.meta.env.SITE
 
-  const url = new URL(path, siteUrl).toString();
-  const imageFullUrl = new URL(imagePath, siteUrl).toString();
-  const faviconFullUrl = new URL(site.faviconPath, siteUrl).toString();
+  const url = new URL(path, siteUrl).toString()
+  const imageFullUrl = new URL(imagePath, siteUrl).toString()
+  const faviconFullUrl = new URL(site.faviconPath, siteUrl).toString()
 
   return (
     <>
@@ -41,7 +41,7 @@ const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {
       {/* https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls */}
       <link rel="canonical" href={url} />
     </>
-  );
-};
+  )
+}
 
-export default Metatags;
+export default Metatags

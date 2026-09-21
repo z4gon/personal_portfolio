@@ -1,9 +1,9 @@
-import type { HTMLAttributes } from "preact";
-import styles from "./Button.module.scss";
-import classNames from "../utils/classNames";
+import type { HTMLAttributes } from 'preact'
+import styles from './Button.module.scss'
+import classNames from '../utils/classNames'
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  className?: string;
+  className?: string
 }
 
 const Button = ({ className, onClick, children, ...rest }: ButtonProps) => {
@@ -15,7 +15,7 @@ const Button = ({ className, onClick, children, ...rest }: ButtonProps) => {
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

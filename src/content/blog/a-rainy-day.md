@@ -1,6 +1,6 @@
 ---
-title: "A Rainy Day"
-description: "Fun activities to do on a rainy day."
+title: 'A Rainy Day'
+description: 'Fun activities to do on a rainy day.'
 createdDate: 2024-06-18
 updatedDate: 2024-06-18
 ---

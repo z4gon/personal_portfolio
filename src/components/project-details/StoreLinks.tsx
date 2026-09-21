@@ -1,10 +1,10 @@
-import styles from "./StoreLinks.module.scss";
-import Link from "../link/Link";
+import styles from './StoreLinks.module.scss'
+import Link from '../link/Link'
 
 interface StoreLinksProps {
-  appleAppStoreUrl?: string;
-  googlePlayStoreUrl?: string;
-  itchioUrl?: string;
+  appleAppStoreUrl?: string
+  googlePlayStoreUrl?: string
+  itchioUrl?: string
 }
 
 const StoreLinks = ({
@@ -13,7 +13,7 @@ const StoreLinks = ({
   itchioUrl,
 }: StoreLinksProps) => {
   if (!appleAppStoreUrl && !googlePlayStoreUrl && !itchioUrl) {
-    return null;
+    return null
   }
   return (
     <div className={styles.storeLinks}>
@@ -45,7 +45,7 @@ const StoreLinks = ({
         </Link>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default StoreLinks;
+export default StoreLinks

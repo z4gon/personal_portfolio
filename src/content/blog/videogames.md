@@ -1,6 +1,6 @@
 ---
-title: "Videogames"
-description: "Recommended videogames to play."
+title: 'Videogames'
+description: 'Recommended videogames to play.'
 createdDate: 2024-06-18
 updatedDate: 2024-06-18
 ---
