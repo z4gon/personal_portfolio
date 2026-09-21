@@ -1,7 +1,7 @@
 import type { FunctionalComponent, ComponentChildren } from "preact";
 import styles from "./ExternalLink.module.scss";
-import ExternalLinkIcon from "./icons/ExternalLinkIcon";
-import classNames from "../utils/classNames";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import classNames from "../../utils/classNames";
 import Link from "./Link";
 
 interface ExternalLinkProps {

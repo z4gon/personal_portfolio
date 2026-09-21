@@ -1,5 +1,5 @@
 import styles from "./StoreLinks.module.scss";
-import Link from "../Link";
+import Link from "../link/Link";
 
 interface StoreLinksProps {
   appleAppStoreUrl?: string;

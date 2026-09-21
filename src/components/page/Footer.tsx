@@ -1,4 +1,4 @@
-import IconLink from "../IconLink";
+import IconLink from "../link/IconLink";
 import GitHubIcon from "../icons/GitHubIcon";
 import { githubUser, githubUrl } from "../../config";
 import styles from "./Footer.module.scss";

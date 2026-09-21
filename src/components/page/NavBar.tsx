@@ -1,6 +1,6 @@
-import IconLink from "../IconLink";
+import IconLink from "../link/IconLink";
 import GitHubIcon from "../icons/GitHubIcon";
-import Link from "../Link";
+import Link from "../link/Link";
 import styles from "./NavBar.module.scss";
 import { githubUser, githubUrl } from "../../config";
 
