@@ -1,5 +1,5 @@
 import styles from "./Tag.module.scss";
-import { classNames } from "../utils/classNames";
+import classNames from "../utils/classNames";
 
 interface TagProps {
   children?: preact.ComponentChildren;
@@ -8,7 +8,7 @@ interface TagProps {
   dark?: boolean;
 }
 
-export const Tag = ({
+const Tag = ({
   children,
   className,
   secondary = false,
@@ -23,3 +23,5 @@ export const Tag = ({
     {children}
   </span>
 );
+
+export default Tag;

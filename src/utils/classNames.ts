@@ -28,3 +28,5 @@ export const classNames = (...values: ClassNamesValue[]): string => {
 
   return result;
 };
+
+export default classNames;

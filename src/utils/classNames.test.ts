@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { classNames } from "./classNames";
+import classNames from "./classNames";
 
 test.each([
   // joins plain strings with a single space

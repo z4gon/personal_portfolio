@@ -1,5 +1,6 @@
 import type { FunctionalComponent } from "preact";
 import styles from "./IconLink.module.scss";
+import Link from "./Link";
 
 interface IconLinkProps {
   Icon: FunctionalComponent<{ className?: string }>;
@@ -8,9 +9,9 @@ interface IconLinkProps {
 
 const IconLink = ({ href, Icon }: IconLinkProps) => {
   return (
-    <a href={href} rel="noopener noreferrer" target="_blank">
+    <Link href={href} newTab>
       <Icon className={styles.iconSvg} />
-    </a>
+    </Link>
   );
 };
 

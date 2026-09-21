@@ -1,4 +1,4 @@
-import { Tag } from "./Tag";
+import Tag from "./Tag";
 import styles from "./TagsList.module.scss";
 
 interface TagsListProps {

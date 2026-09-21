@@ -1,7 +1,8 @@
 import type { FunctionalComponent, ComponentChildren } from "preact";
 import styles from "./ExternalLink.module.scss";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
-import { classNames } from "../utils/classNames";
+import classNames from "../utils/classNames";
+import Link from "./Link";
 
 interface ExternalLinkProps {
   href: string;
@@ -17,11 +18,10 @@ const ExternalLink = ({
   children,
 }: ExternalLinkProps) => {
   return (
-    <a
-      className={classNames(styles.externalLink, className)}
+    <Link
       href={href}
-      rel="noopener noreferrer"
-      target="_blank"
+      newTab
+      className={classNames(styles.externalLink, className)}
     >
       {children}
       {Icon ? (
@@ -29,7 +29,7 @@ const ExternalLink = ({
       ) : (
         <ExternalLinkIcon className={styles.iconSvg} />
       )}
-    </a>
+    </Link>
   );
 };
 

@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Page from "../layouts/Page.astro";
 import Greetings from "../components/Greetings";
 import Counter from "../components/Counter";
+import Link from "../components/Link";
 import { getCollection } from "astro:content";
 
 // Get all entries from a collection.
@@ -16,7 +17,7 @@ const allBlogPosts = await getCollection("blog");
     <Greetings />
     {allBlogPosts.map((x) => (
       <p>
-        <a href={`/blog/${x.id}`}>{x.data.title}</a>
+        <Link href={`/blog/${x.id}`}>{x.data.title}</Link>
       </p>
     ))}
     <Counter client:load />
