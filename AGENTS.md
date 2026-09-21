@@ -3,6 +3,7 @@
 ## Commands
 
 - Never run npx commands (or similar). Use the project's npm scripts from `package.json` instead.
+- After making changes, verify with `npm run check`, `npm run format:check` and, if the change affects build output, `npm run build`.
 
 ## Code style
 
