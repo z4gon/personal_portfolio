@@ -1,0 +1,27 @@
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text-color);
+
+  display: inline-block;
+  font-weight: normal;
+
+  vertical-align: middle;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  padding: 6px 10px;
+  border-radius: 30px;
+
+  margin: 0 5px 5px 0;
+
+  &.secondary {
+    background: var(--tag-secondary-bg);
+    color: var(--tag-secondary-text-color);
+  }
+
+  &.dark {
+    background: var(--tag-dark-bg);
+    color: var(--tag-dark-text-color);
+  }
+}
