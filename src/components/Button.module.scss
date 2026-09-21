@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  font-size: 1em;
+
+  background-color: var(--bg);
+  color: var(--button-text-color);
+
+  border: solid 1px var(--button-border);
+  border-radius: 5px;
+  padding: 4px 8px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    border: solid 1px var(--button-bg-highlight);
+
+    color: var(--button-text-color-highlight);
+    background-color: var(--button-bg-highlight);
+  }
+}
