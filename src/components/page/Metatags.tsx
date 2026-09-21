@@ -1,14 +1,14 @@
 import { site } from "../../config";
 
 // page-level overrides, falling back to site config
-interface Props {
+interface MetatagsProps {
   path: string;
   title?: string | undefined;
   description?: string | undefined;
   imagePath?: string | undefined;
 }
 
-const Metatags = ({ path, ...siteOverrides }: Props) => {
+const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {
   const title = siteOverrides.title ?? site.title;
   const description = siteOverrides.description ?? site.description;
   const imagePath = siteOverrides.imagePath ?? site.imagePath;
