@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 6em;
+
+  background-color: var(--footer-bg);
+
+  color: var(--text-color);
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin-top: 1.6em;
+
+    .icon {
+      & + .icon {
+        margin-left: 15px;
+      }
+    }
+  }
+}

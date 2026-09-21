@@ -1,7 +1,11 @@
 ---
+import NavBar from "../components/navbar/NavBar";
+import Footer from "../components/page/Footer";
 import styles from "./Page.module.scss";
 ---
 
 <div class={styles.page}>
+  <NavBar client:load />
   <slot />
+  <Footer />
 </div>

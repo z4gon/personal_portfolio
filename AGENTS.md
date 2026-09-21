@@ -11,6 +11,7 @@
 - Name component prop interfaces `{Component}Props` (e.g. `ButtonProps`), not bare `Props`.
 - Combine class-name values with the `classNames` utility (`src/utils/classNames`).
 - Use the `Link` component (`src/components/Link`) instead of raw `<a>` elements in Preact components.
+- Never hardcode site data (URLs, identity, strings) in components; source it from `src/config.ts`, Astro config, or collection data.
 - Use default exports in component and utility files.
 - Type Preact functional components like this: `const Foo = ({ bar }: FooProps) => ...` — annotate the props parameter, don't annotate the const.
 - Trust deprecation messages literally: try importing the suggested replacement from the package namespace (e.g. `import type { HTMLAttributes } from "preact"`) before assuming it doesn't exist.
