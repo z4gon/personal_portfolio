@@ -1,0 +1,28 @@
+.storeLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .itchioBadge {
+    width: 150px;
+    padding-right: 12px;
+  }
+  .appleAppStoreBadge {
+    width: 150px;
+  }
+  .googlePlayStoreBadge {
+    width: 190px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .itchioBadge {
+      width: 100px;
+    }
+    .appleAppStoreBadge {
+      width: 100px;
+    }
+    .googlePlayStoreBadge {
+      width: 130px;
+    }
+  }
+}
