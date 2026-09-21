@@ -1,4 +1,4 @@
-import type { FunctionalComponent } from "preact";
+import type { FunctionalComponent, ComponentChildren } from "preact";
 import styles from "./ExternalLink.module.scss";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import { classNames } from "../utils/classNames";
@@ -6,7 +6,8 @@ import { classNames } from "../utils/classNames";
 interface ExternalLinkProps {
   href: string;
   className?: string;
-  Icon?: FunctionalComponent<{ className?: string }>;
+  Icon?: FunctionalComponent<{ className?: string | undefined }>;
+  children: ComponentChildren;
 }
 
 const ExternalLink = ({

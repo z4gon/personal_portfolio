@@ -1,7 +1,7 @@
 import "./Greetings.scss";
 
 const Greetings = () => (
-  <div class="hello">
+  <div className="hello">
     <h2>Welcome!</h2>
   </div>
 );
