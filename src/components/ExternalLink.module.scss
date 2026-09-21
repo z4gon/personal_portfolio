@@ -1,0 +1,50 @@
+.externalLink {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: auto;
+
+  color: var(--button-text-color);
+
+  border: solid 1px var(--button-border);
+  border-radius: 5px;
+  padding: 4px 8px;
+
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+
+  margin-bottom: 10px;
+
+  & + .externalLink {
+    margin-left: 10px;
+  }
+
+  .iconSvg {
+    margin-left: 6px;
+    height: 20px;
+    width: 20px;
+
+    path {
+      fill: var(--button-text-color);
+      transition: fill 0.2s ease-in-out;
+    }
+  }
+
+  &:hover {
+    border: solid 1px var(--button-bg-highlight);
+
+    color: var(--button-text-color-highlight);
+    background-color: var(--button-bg-highlight);
+
+    svg {
+      path {
+        fill: var(--button-text-color-highlight);
+      }
+    }
+  }
+}
