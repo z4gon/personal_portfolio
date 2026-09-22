@@ -1,8 +1,10 @@
 ---
 title: 'A Rainy Day'
-description: 'Fun activities to do on a rainy day.'
-createdDate: 2024-06-18
-updatedDate: 2024-06-18
+date: 2024-06-18
+author: 'z4gon'
+excerpt: 'Fun activities to do on a rainy day.'
+heroImageUrl: '/thumbnail.gif'
+heroImageSourceUrl: '/thumbnail.gif'
 ---
 
 ## Fun Activities

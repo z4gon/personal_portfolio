@@ -1,8 +1,10 @@
 ---
 title: 'Videogames'
-description: 'Recommended videogames to play.'
-createdDate: 2024-06-18
-updatedDate: 2024-06-18
+date: 2024-06-18
+author: 'z4gon'
+excerpt: 'Recommended videogames to play.'
+heroImageUrl: '/thumbnail.gif'
+heroImageSourceUrl: '/thumbnail.gif'
 ---
 
 ## Recommended Videogames

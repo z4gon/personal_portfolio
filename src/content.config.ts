@@ -3,15 +3,8 @@ import {
   glob,
   // , file
 } from 'astro/loaders'
-import { z } from 'astro/zod'
-
-// zod schema
-const blogPostSchema = z.object({
-  title: z.string(),
-  description: z.string(),
-  createdDate: z.coerce.date(),
-  updatedDate: z.coerce.date().optional(),
-})
+import { blogPostSchema } from './models/BlogPost'
+import { projectSchema } from './models/Project'
 
 // id = file path slugified (github-slugger):
 //   "My Great Post.md"   -> "my-great-post"  (spaces -> dashes, lowercased)
@@ -23,4 +16,9 @@ const blog = defineCollection({
   schema: blogPostSchema,
 })
 
-export const collections = { blog }
+const projects = defineCollection({
+  loader: glob({ base: './src/content/projects', pattern: '**/*.{md,mdx}' }),
+  schema: projectSchema,
+})
+
+export const collections = { blog, projects }
