@@ -5,39 +5,38 @@ import Technology from './enums/Technology'
 
 // demo/docs/showcase links
 export const linkSchema = z.object({
-  label: z.string(),
-  url: z.string(),
+  href: z.string(),
+  text: z.string(),
 })
 
-// frontmatter; `id` comes from the file name, body markdown lives outside the schema
+// Frontmatter; `id` comes from the file name, and asset URLs are resolved after loading.
 export const projectSchema = z.object({
   // prevent dead links when a project slug is renamed
   aliases: z.array(z.string()).optional(),
 
-  priority: z.number(),
+  priority: z.number().default(0),
 
   title: z.string(),
   date: z.coerce.date(),
-
-  thumbnailUrl: z.string(),
 
   // metadata
   tags: z.array(z.enum(Tag)),
   technology: z.enum(Technology).optional(),
   category: z.enum(Category),
 
-  metaImageUrl: z.string(),
-
   // hero
-  heroImageUrl: z.string().optional(),
-  heroVideoUrl: z.string().optional(),
+  heroImageName: z.string().optional(),
+  heroVideoName: z.string().optional(),
 
   // carousel
-  imagesUrls: z.array(z.string()).optional(),
-  videosUrls: z.array(z.string()).optional(),
+  imagesNames: z.array(z.string()).optional(),
+  videosNames: z.array(z.string()).optional(),
 
   subtitle: z.string(),
-  description: z.array(z.string()).optional(),
+  description: z
+    .array(z.string())
+    .nullish()
+    .transform((value) => value ?? []),
   implementationDetails: z.array(z.string()),
 
   links: z.array(linkSchema).optional(),
@@ -53,3 +52,24 @@ export const projectSchema = z.object({
 })
 
 export type Project = z.infer<typeof projectSchema>
+
+export type ProjectFull = Omit<
+  Project,
+  'heroImageName' | 'heroVideoName' | 'imagesNames' | 'videosNames'
+> & {
+  id: string
+
+  thumbnailUrl: string
+  metaImageUrl: string
+
+  heroImageUrl?: string
+  heroVideoUrl?: string
+
+  imagesUrls?: string[]
+  videosUrls?: string[]
+}
+
+export type ProjectPreview = Pick<
+  ProjectFull,
+  'id' | 'title' | 'thumbnailUrl' | 'technology'
+>
