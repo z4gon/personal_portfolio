@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+
+  &.wide {
+    @media screen and (min-width: 701px) {
+      max-width: 700px;
+    }
+
+    @media screen and (min-width: 1051px) {
+      max-width: 1050px;
+    }
+
+    @media screen and (min-width: 1401px) {
+      max-width: 1400px;
+    }
+  }
+
+  &.narrow {
+    max-width: 100%;
+
+    @media screen and (min-width: 701px) {
+      max-width: 700px;
+    }
+
+    @media screen and (min-width: 1051px) {
+      max-width: 1050px;
+    }
+
+    @media screen and (min-width: 901px) {
+      max-width: 900px;
+    }
+  }
+}
