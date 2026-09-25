@@ -1,8 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
 import type { ProjectFull, ProjectPreview } from '../models/Project'
 
-const resourcesUrl = (id: string, name: string) =>
-  `/resources/projects/${id}/${name}`
+const resourcesUrl = (id: string, name: string) => `/res/projects/${id}/${name}`
 
 const withDerivedUrls = ({
   id,
