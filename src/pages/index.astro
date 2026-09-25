@@ -1,21 +1,41 @@
 ---
 import Base from '../layouts/Base.astro'
 import Page from '../layouts/Page.astro'
-import Link from '../components/link/Link'
-import { getCollection } from 'astro:content'
+import Container from '../components/page/Container'
+import Spacer from '../components/Spacer'
+import ProjectsGrid from '../components/projects-grid/ProjectsGrid'
+import Category from '../models/enums/Category'
+import { getProjects, toProjectPreview } from '../utils/getProjects'
 
-// Get all entries from a collection.
-// Requires the name of the collection as an argument.
-const allBlogPosts = await getCollection('blog')
+const PAGE_SIZE = 8
+const categories = [
+  Category.GameDev,
+  Category.Shaders,
+  Category.VisualEffects,
+  Category.ComputeShaders,
+]
+
+const projects = await getProjects()
+const projectsByCategory = categories.map((category) =>
+  projects
+    .filter((project) => project.category === category)
+    .sort((a, b) => a.priority - b.priority)
+    .map(toProjectPreview),
+)
 ---
 
 <Base>
   <Page>
-    <h1>Hello, World!</h1>
-    {allBlogPosts.map((x) => (
-      <p>
-        <Link href={`/blog/${x.id}`}>{x.data.title}</Link>
-      </p>
-    ))}
+    <Container>
+      <Spacer amount="lg" />
+      {projectsByCategory.map((categoryProjects) => (
+        <ProjectsGrid
+          projects={categoryProjects}
+          pageSize={PAGE_SIZE}
+          client:load
+        />
+      ))}
+      <Spacer amount="xl" />
+    </Container>
   </Page>
 </Base>
