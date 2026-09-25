@@ -23,7 +23,7 @@ const ProjectCard = ({
           {technology && (
             <img
               className={styles.technology}
-              src={`/images/technologies/${technology}.png`}
+              src={`/img/technologies/${technology}.png`}
               alt={technology}
             />
           )}
