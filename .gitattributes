@@ -1,0 +1,5 @@
+public/res/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+public/res/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+public/res/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+public/res/**/*.gif filter=lfs diff=lfs merge=lfs -text
+public/res/**/*.png filter=lfs diff=lfs merge=lfs -text
