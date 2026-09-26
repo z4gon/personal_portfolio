@@ -1,17 +1,17 @@
 import { useContext } from 'preact/hooks'
-import FullscreenCarouselContext from './FullscreenCarouselContext'
-import styles from './FullscreenCarousel.module.scss'
+import FullscreenImageCarouselContext from './FullscreenImageCarouselContext'
+import styles from './FullscreenImageCarousel.module.scss'
 
-const FullscreenCarousel = () => {
+const FullscreenImageCarousel = () => {
   const {
-    urls = [],
+    imagesUrls = [],
     currentIndex,
     close,
     next,
     previous,
-  } = useContext(FullscreenCarouselContext)
+  } = useContext(FullscreenImageCarouselContext)
 
-  if (currentIndex === null || urls.length === 0) {
+  if (currentIndex === null || imagesUrls.length === 0) {
     return null
   }
 
@@ -23,12 +23,12 @@ const FullscreenCarousel = () => {
       aria-label="Image viewer"
     >
       <div
-        style={{ backgroundImage: `url(${urls[currentIndex]})` }}
+        style={{ backgroundImage: `url(${imagesUrls[currentIndex]})` }}
         className={styles.image}
         // hack to make div listen to on key down
         tabIndex={0}
         role="group"
-        aria-label={`Image ${currentIndex + 1} of ${urls.length}`}
+        aria-label={`Image ${currentIndex + 1} of ${imagesUrls.length}`}
         onKeyDown={(event) => {
           // on next
           if (event.key === 'ArrowRight') {
@@ -75,4 +75,4 @@ const FullscreenCarousel = () => {
   )
 }
 
-export default FullscreenCarousel
+export default FullscreenImageCarousel

@@ -1,17 +1,17 @@
 import { useContext } from 'preact/hooks'
-import FullscreenCarouselContext from './FullscreenCarouselContext'
-import styles from './GoFullscreenButton.module.scss'
+import FullscreenImageCarouselContext from './FullscreenImageCarouselContext'
+import styles from './OpenFullscreenImageButton.module.scss'
 
-interface GoFullscreenButtonProps {
+interface OpenFullscreenImageButtonProps {
   imagesUrls: string[]
   imageIndex: number
 }
 
-const GoFullscreenButton = ({
+const OpenFullscreenImageButton = ({
   imagesUrls,
   imageIndex,
-}: GoFullscreenButtonProps) => {
-  const { open } = useContext(FullscreenCarouselContext)
+}: OpenFullscreenImageButtonProps) => {
+  const { open } = useContext(FullscreenImageCarouselContext)
 
   return (
     <button
@@ -25,4 +25,4 @@ const GoFullscreenButton = ({
   )
 }
 
-export default GoFullscreenButton
+export default OpenFullscreenImageButton
