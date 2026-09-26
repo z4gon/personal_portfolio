@@ -20,7 +20,7 @@ const StoreLinks = ({
       {itchioUrl && (
         <Link href={itchioUrl} newTab>
           <img
-            src="/img/ui/badge-itch-io.svg"
+            src="/img/ui/badge/itch-io.svg"
             alt="View on itch.io"
             className={styles.itchioBadge}
           />
@@ -29,7 +29,7 @@ const StoreLinks = ({
       {appleAppStoreUrl && (
         <Link href={appleAppStoreUrl} newTab>
           <img
-            src="/img/ui/badge-app-store.svg"
+            src="/img/ui/badge/app-store.svg"
             alt="Download on the App Store"
             className={styles.appleAppStoreBadge}
           />
@@ -38,7 +38,7 @@ const StoreLinks = ({
       {googlePlayStoreUrl && (
         <Link href={googlePlayStoreUrl} newTab>
           <img
-            src="/img/ui/badge-google-play.png"
+            src="/img/ui/badge/google-play.png"
             alt="Get it on Google Play"
             className={styles.googlePlayStoreBadge}
           />
