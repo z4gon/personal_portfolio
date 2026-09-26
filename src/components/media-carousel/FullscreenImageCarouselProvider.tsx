@@ -3,13 +3,13 @@ import { useState } from 'preact/hooks'
 import FullscreenImageCarouselContext from './FullscreenImageCarouselContext'
 import FullscreenImageCarousel from './FullscreenImageCarousel'
 
-interface WithFullscreenImageCarouselProps {
+interface FullscreenImageCarouselProviderProps {
   children: ComponentChildren
 }
 
-const WithFullscreenImageCarousel = ({
+const FullscreenImageCarouselProvider = ({
   children,
-}: WithFullscreenImageCarouselProps) => {
+}: FullscreenImageCarouselProviderProps) => {
   const [imagesUrls, setImagesUrls] = useState<string[]>([])
   const [currentIndex, setCurrentIndex] = useState<number | null>(null)
 
@@ -46,4 +46,4 @@ const WithFullscreenImageCarousel = ({
   )
 }
 
-export default WithFullscreenImageCarousel
+export default FullscreenImageCarouselProvider
