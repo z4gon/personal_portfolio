@@ -6,7 +6,10 @@ interface DateFormatterProps {
   includeDay?: boolean
 }
 
-const DateFormatter = ({ dateString, includeDay = false }: DateFormatterProps) => (
+const DateFormatter = ({
+  dateString,
+  includeDay = false,
+}: DateFormatterProps) => (
   <time className={styles.dateFormatter} dateTime={dateString}>
     {formatDate(new Date(dateString), includeDay)}
   </time>
