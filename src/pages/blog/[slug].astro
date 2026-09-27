@@ -1,4 +1,8 @@
 ---
+import Post from '../../components/blog/Post'
+import Container from '../../components/page/Container'
+import Spacer from '../../components/Spacer'
+import { authors } from '../../config'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
 import { getCollection, render } from 'astro:content'
@@ -15,11 +19,22 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const { post } = Astro.props
 const { Content } = await render(post)
+const postData = {
+  slug: post.id,
+  ...post.data,
+  date: post.data.date.toISOString(),
+  author: authors[post.data.author],
+}
 ---
 
 <Base title={post.data.title} description={post.data.excerpt}>
   <Page>
-    <h1>{post.data.title}</h1>
-    <Content />
+    <Container wide={false}>
+      <Spacer amount="xl" />
+      <Post post={postData}>
+        <Content />
+      </Post>
+      <Spacer amount="xl" />
+    </Container>
   </Page>
 </Base>
