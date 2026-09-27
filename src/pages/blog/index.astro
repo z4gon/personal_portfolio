@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content'
+import PostsGrid from '../../components/blog/PostsGrid'
+import Container from '../../components/page/Container'
+import Spacer from '../../components/Spacer'
+import Base from '../../layouts/Base.astro'
+import Page from '../../layouts/Page.astro'
+import styles from './index.module.scss'
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map(({ id, data }) => ({
+    id,
+    title: data.title,
+    author: data.author,
+    date: data.date.toISOString(),
+    heroImageUrl: data.heroImageUrl,
+  }))
+---
+
+<Base title="Blog" description="Articles and notes by z4gon.">
+  <Page>
+    <Container className={styles.blogIndex}>
+      <Spacer amount="lg" />
+      <h1 class={styles.title}>Blog</h1>
+      <PostsGrid posts={posts} client:load />
+      <Spacer amount="xl" />
+    </Container>
+  </Page>
+</Base>
