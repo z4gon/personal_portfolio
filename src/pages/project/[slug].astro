@@ -13,6 +13,7 @@ import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
 import type { ProjectFull } from '../../models/Project'
 import { toProjectFull } from '../../utils/getProjects'
+import formatDate from '../../utils/formatDate'
 import styles from './Project.module.scss'
 
 export async function getStaticPaths() {
@@ -53,11 +54,6 @@ const {
   googlePlayStoreUrl,
   itchioUrl,
 } = project
-const createdAtStr = date.toLocaleDateString('en-CA', {
-  year: 'numeric',
-  month: '2-digit',
-  timeZone: 'UTC',
-})
 ---
 
 <Base
@@ -123,7 +119,7 @@ const createdAtStr = date.toLocaleDateString('en-CA', {
                 )}
                 {title}
                 <Tag className={styles.date} secondary>
-                  {createdAtStr}
+                  {formatDate(date, true)}
                 </Tag>
               </h1>
               <span class={styles.subtitle}>{subtitle}</span>
