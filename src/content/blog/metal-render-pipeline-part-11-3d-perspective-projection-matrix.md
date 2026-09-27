@@ -2,7 +2,7 @@
 title: '3D Perspective Projection Matrix (Metal Part 11)'
 excerpt: 'Setting up the the 3D perspective projection matrix to transform view space coordinates in homogeneous clip space coordinates. Later on the GPU takes in these and calculates the Normalized Device Coordinates, to finally calculate the actual Screen Space coordinates. Configuring the Depth Stencil in Metal, to perform Depth Testing and clipping based on depth, using the Depth Texture. Multiplying the projection matrix by the view space coordinates vector during the Vertex Shader Function stage.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/1.mp4'
 date: '2022-12-29T00:00:00.000Z'
 author: 'z4gon'

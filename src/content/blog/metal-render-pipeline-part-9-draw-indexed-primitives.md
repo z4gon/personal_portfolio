@@ -2,7 +2,7 @@
 title: 'Draw Indexed Primitives (Metal Part 9)'
 excerpt: 'Defining the indices array for the meshes, to remove duplicate vertices from the vertices array. Sending the indices array as an index buffer to the GPU, to describe how to render the primitive triangles.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-9-draw-indexed-primitives/cover.jpg'
-heroImageSourceUrl: 'https://vulkan-tutorial.com/Vertex_buffers/Index_buffer'
+heroImageCreditUrl: 'https://vulkan-tutorial.com/Vertex_buffers/Index_buffer'
 date: '2022-12-28T01:00:00.000Z'
 author: 'z4gon'
 ---

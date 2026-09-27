@@ -2,7 +2,7 @@
 title: '3D Affine Transformation Matrices (Metal Part 7)'
 excerpt: 'Implementing transformation matrices to convert vertex positions from object space to world space, using the model matrix for transformations. Passing the matrix to the CPU using a buffer, and then doing the matrix multiplication for each vertex in the vertex shader function'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-7-3d-affine-transformation-matrices/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 date: '2022-12-27T00:00:00.000Z'
 author: 'z4gon'
 ---

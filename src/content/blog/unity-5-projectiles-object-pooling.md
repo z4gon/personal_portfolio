@@ -2,7 +2,7 @@
 title: 'Physics Projectiles, Coroutines and Object Pooling (Unity)'
 excerpt: 'Using Corotuines and Object Pools to instantiate projectiles, and Ribidbodies for simple physics.'
 heroImageUrl: '/res/blog/unity-5-projectiles-object-pooling/3.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-5-projectiles-object-pooling/1.mp4'
 date: '2023-06-03T00:00:00.000Z'
 author: 'z4gon'

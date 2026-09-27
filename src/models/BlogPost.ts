@@ -13,7 +13,7 @@ export const blogPostSchema = z.object({
   // hero
   heroImageUrl: z.string(),
   heroVideoUrl: z.string().optional(),
-  heroImageSourceUrl: z.string(),
+  heroImageCreditUrl: z.string(),
 })
 
 export type BlogPost = z.infer<typeof blogPostSchema>

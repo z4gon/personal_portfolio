@@ -2,7 +2,7 @@
 title: 'Rendering a Triangle (Metal Part 2)'
 excerpt: 'Rendering a primitive triangle using the GPU, a vertices array, and a memory buffer. Writing a vertex function to access the individual vertices and passing them down to the fragment stage shader.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-2-rendering-primitive-triangle/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 date: '2022-11-30T00:00:00.000Z'
 author: 'z4gon'
 ---

@@ -2,7 +2,7 @@
 title: 'Loading and Rendering .OBJ Models (Metal Part 15)'
 excerpt: 'Mesh References describing the .OBJ asset and how to load it. Mesh Loader to actually use ModelIO and load the MTKMeshes out of the .OBJ file, using a MTKModelIOVertexDescriptor. Extending the Mesh class to have two subclasses, the BuiltInMesh and the ModelMesh. The Model Mesh will have a reference to the MTKMesh with all the submeshes, vertex and index buffers. Modifying the Mesh Renderer to be able to render MTKMeshes. Using Texture References and Texture Loaders to load any needed texture for the models.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-15-loading-and-rendering-obj-models/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/metal-render-pipeline-part-15-loading-and-rendering-obj-models/1.mp4'
 date: '2023-01-02T00:00:00.000Z'
 author: 'z4gon'

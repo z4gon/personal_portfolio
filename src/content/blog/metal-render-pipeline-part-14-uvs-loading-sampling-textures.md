@@ -2,7 +2,7 @@
 title: 'UVs, Loading and Sampling Textures (Metal Part 14)'
 excerpt: 'Defining the UV coordinates in the vertices of the mesh, and also in the GPU structs used in the Vertex and Fragment functions. Initializing MTLTextures and MTLSamplerStates to handle texture sampling. Passing textures and samplers to the GPU from the material. Accessing the texture and sampler in the corresponding memory blocks in the GPU and sampling the texels using the UV coordinates in the fragment shader function.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/1.mp4'
 date: '2023-01-01T01:00:00.000Z'
 author: 'z4gon'

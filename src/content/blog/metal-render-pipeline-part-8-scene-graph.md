@@ -2,7 +2,7 @@
 title: 'Scene Graph (Metal Part 8)'
 excerpt: 'Implementing a Scene Object and a Scene Manager, to be able to render many objects and decouple the state out of the Game View Renderer.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-8-scene-graph/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 date: '2022-12-28T00:00:00.000Z'
 author: 'z4gon'
 ---

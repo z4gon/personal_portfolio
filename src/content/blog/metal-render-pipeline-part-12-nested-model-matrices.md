@@ -2,7 +2,7 @@
 title: 'Nested Model Matrices (Metal Part 12)'
 excerpt: 'Using the parent transform to calculate the child model matrix, taking into account the transformation applied to the parent.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-12-nested-model-matrices/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/metal-render-pipeline-part-12-nested-model-matrices/1.mp4'
 date: '2022-12-30T00:00:00.000Z'
 author: 'z4gon'

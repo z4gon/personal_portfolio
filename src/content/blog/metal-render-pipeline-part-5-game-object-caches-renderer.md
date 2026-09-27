@@ -2,7 +2,7 @@
 title: 'Game Object, Objects Caches and Renderer (Metal Part 5)'
 excerpt: 'Organizing the code in sub classes to build the foundations of what is to come for this basic game engine. Delegating the rendering to an MTKViewDelegate, and also drawing the primitives in the dedicated Game Object class.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-5-game-object-caches-renderer/cover.jpg'
-heroImageSourceUrl: 'https://unsplash.com/photos/CxE1H2_9B9s'
+heroImageCreditUrl: 'https://unsplash.com/photos/CxE1H2_9B9s'
 date: '2022-12-21T00:00:00.000Z'
 author: 'z4gon'
 ---

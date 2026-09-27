@@ -2,7 +2,7 @@
 title: 'Pan, Zoom and Orbit Behavior (Unity)'
 excerpt: 'UI elements to Orbit, Zoom, Pan and Reset View. GUIs to tweak values for demo purposes.'
 heroImageUrl: '/res/blog/unity-0-demo-template-guis/11.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-0-demo-template-guis/1.mp4'
 date: '2023-07-08T00:00:00.000Z'
 author: 'z4gon'

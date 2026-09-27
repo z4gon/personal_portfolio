@@ -2,7 +2,7 @@
 title: 'Transform, Components and MeshRenderer (Metal Part 6)'
 excerpt: 'Implementing the Transform objects which will form a tree structure to build the Scene Graph. Adding Components to the Game Object, so that different functionalities and behaviors can be composed inside a Game Object as a list of children components. Finally implementing a MeshRenderer component which will be in charge of rendering the 3D mesh associated with the Game Object.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-6-transform-component-mesh-renderer/cover.jpg'
-heroImageSourceUrl: ''
+heroImageCreditUrl: ''
 date: '2022-12-26T00:00:00.000Z'
 author: 'z4gon'
 ---

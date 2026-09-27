@@ -1,0 +1,14 @@
+.heroImage {
+  img {
+    width: 100%;
+    min-height: 10em;
+  }
+
+  a {
+    display: block;
+    margin-top: 0.6em;
+    color: var(--link-color);
+    font-weight: bold;
+    text-align: right;
+  }
+}

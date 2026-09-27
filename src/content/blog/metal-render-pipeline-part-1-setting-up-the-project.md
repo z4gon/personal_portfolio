@@ -2,7 +2,7 @@
 title: 'Setting up the Project (Metal Part 1)'
 excerpt: 'Following the amazing tutorial series by Rick Twohy, creating a basic macos app project in xcode using Swift and Storyboards. Utilizing the Metal Kit library to access the Metal APIs to render 3D graphics, initializing the basic components to setup the render pipeline and start outputing 3D graphics on the screen.'
 heroImageUrl: '/res/blog/metal-render-pipeline-part-1-setting-up-the-project/cover.jpg'
-heroImageSourceUrl: 'https://unsplash.com/photos/ICTjWYzpoc0'
+heroImageCreditUrl: 'https://unsplash.com/photos/ICTjWYzpoc0'
 date: '2022-11-29T00:00:00.000Z'
 author: 'z4gon'
 ---
