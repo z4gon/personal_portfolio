@@ -170,4 +170,4 @@ class Engine {
 
 Now the scene contains lots of game objects and all **update** and **render** accordingly.
 
-![Picture](/resources/blog/metal-render-pipeline-part-8-scene-graph/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-8-scene-graph/cover.jpg)

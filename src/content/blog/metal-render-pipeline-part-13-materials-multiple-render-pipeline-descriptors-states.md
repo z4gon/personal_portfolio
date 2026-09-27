@@ -173,4 +173,4 @@ override func setGpuValues() {
 
 Now the quad is using a different fragment function than the cube, because the render command encoder is using different render pipeline states.
 
-![Picture](/resources/blog/metal-render-pipeline-part-13-materials-multiple-render-pipeline-descriptors-states/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-13-materials-multiple-render-pipeline-descriptors-states/cover.jpg)

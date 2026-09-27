@@ -47,7 +47,7 @@ author: 'z4gon'
 
 Projecting 3D objects onto a flat surface means connecting each vertex to the position of the camera, and pin pointing where that line crosses the near clip plane.
 
-![Picture](/resources/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/1.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/1.jpg)
 
 [Image Source 🔗](https://glumpy.readthedocs.io/en/latest/tutorial/cube-ugly.html)
 
@@ -57,7 +57,7 @@ The near and far clip planes determine what gets rendered in terms of depth.
 
 The field of view means how much stuff gets into the projection in terms of bounds vertically and horizontally.
 
-![Picture](/resources/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/2.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/2.jpg)
 
 [Image Source 🔗](https://webglfundamentals.org/webgl/lessons/webgl-3d-perspective.html)
 
@@ -69,7 +69,7 @@ Metal will then translate these to Normalized Device Coordinates ranging from (-
 
 Finally this will be translated to screen space as x, y coordinates in pixels.
 
-![Picture](/resources/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/3.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/3.jpg)
 
 [Image Source 🔗](https://gamedev.stackexchange.com/questions/120338/what-does-a-perspective-projection-matrix-look-like-in-opengl)
 
@@ -349,4 +349,4 @@ vertex FragmentData basic_vertex_shader(
 
 Now the cube appears projected correctly in the screen space plane.
 
-![Picture](/resources/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-11-3d-perspective-projection-matrix/cover.jpg)

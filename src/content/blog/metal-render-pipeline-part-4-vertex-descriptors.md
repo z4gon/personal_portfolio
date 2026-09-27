@@ -68,7 +68,7 @@ The Stride will always be greater than or equal to the size.
 
 It can be greater sometimes to favor memory alignment.
 
-![Picture](/resources/blog/metal-render-pipeline-part-4-vertex-descriptors/1.png)
+![Picture](/res/blog/metal-render-pipeline-part-4-vertex-descriptors/1.png)
 
 [Image Source 🔗](https://swiftunboxed.com/internals/size-stride-alignment/)
 
@@ -108,4 +108,4 @@ vertex FragmentData basic_vertex_shader(
 
 The end result hasn't changed.
 
-![Picture](/resources/blog/metal-render-pipeline-part-4-vertex-descriptors/2.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-4-vertex-descriptors/2.jpg)

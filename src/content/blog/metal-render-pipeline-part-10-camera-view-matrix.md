@@ -167,4 +167,4 @@ vertex FragmentData basic_vertex_shader(
 
 Pressing the keyboard arrows now moves the camera along the x and y coordinates.
 
-![Picture](/resources/blog/metal-render-pipeline-part-10-camera-view-matrix/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-10-camera-view-matrix/cover.jpg)

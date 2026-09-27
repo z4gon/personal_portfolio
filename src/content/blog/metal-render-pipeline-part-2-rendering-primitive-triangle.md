@@ -102,4 +102,4 @@ renderCommandEncoder?.drawPrimitives(type: MTLPrimitiveType.triangle, vertexStar
 
 ## Result
 
-![Picture](/resources/blog/metal-render-pipeline-part-2-rendering-primitive-triangle/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-2-rendering-primitive-triangle/cover.jpg)

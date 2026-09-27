@@ -90,4 +90,4 @@ public void OnPointerPosition(InputAction.CallbackContext context)
 }
 ```
 
-![Picture](/resources/blog/unity-3-plane-raycast/1.jpg)
+![Picture](/res/blog/unity-3-plane-raycast/1.jpg)

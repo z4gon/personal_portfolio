@@ -69,7 +69,7 @@ public void Initialize(Boundaries boundaries)
 }
 ```
 
-![Picture](/resources/blog/unity-6-dynamic-colliders-release-pooled-objects/2.jpg)
+![Picture](/res/blog/unity-6-dynamic-colliders-release-pooled-objects/2.jpg)
 
 ---
 
@@ -101,5 +101,5 @@ public class Gun : MonoBehaviour
 }
 ```
 
-![Picture](/resources/blog/unity-6-dynamic-colliders-release-pooled-objects/3.jpg)
-![Picture](/resources/blog/unity-6-dynamic-colliders-release-pooled-objects/1.jpg)
+![Picture](/res/blog/unity-6-dynamic-colliders-release-pooled-objects/3.jpg)
+![Picture](/res/blog/unity-6-dynamic-colliders-release-pooled-objects/1.jpg)

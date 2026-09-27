@@ -83,4 +83,4 @@ class Transform {
 
 Now the cube moves along the parent quad.
 
-![Picture](/resources/blog/metal-render-pipeline-part-12-nested-model-matrices/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-12-nested-model-matrices/cover.jpg)

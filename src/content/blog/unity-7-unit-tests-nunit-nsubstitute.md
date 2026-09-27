@@ -33,7 +33,7 @@ author: 'z4gon'
 
 - Make sure the `Test Framework` package is installed in the project and updated.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/1.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/1.jpg)
 
 ---
 
@@ -42,13 +42,13 @@ author: 'z4gon'
 - Create two `Assembly Definitions`, one for the `Edit Mode` tests and another for the `Play Mode` tests.
 - `Edit Mode` tests only run in the `Unity Editor` and have access to the `Editor` code in addition to the game code.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/2.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/3.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/15.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/2.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/3.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/15.jpg)
 
 - Make sure to add a reference to the `Assembly Definition` with the code for your game, so you can tests its classes.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/6.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/6.jpg)
 
 ---
 
@@ -56,12 +56,12 @@ author: 'z4gon'
 
 - Create test files using the template or write your own from scratch.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/4.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/5.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/7.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/8.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/4.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/5.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/7.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/8.jpg)
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/15.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/15.jpg)
 
 ---
 
@@ -70,21 +70,21 @@ author: 'z4gon'
 - You will need to obtain the `.dll` from the `NuGet` registry manually, and add it to the Unity project as a `Managed Plug-in` (Which is a .NET assembly).
 - Go to the `NuGet` package for `NSubstitue` and download the `.nupkg`
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/10.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/10.jpg)
 
 - Change the extension to `.zip` to be able to extract its contents.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/9.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/9.jpg)
 
 - Copy over the `.dll` corresponding to the `Api Compatibility Level` set in the `Player Settings` of your project. (Most likely `.NET Standard 2.1`)
 - Repeat the process for any dependency of the library.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/16.jpg)
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/14.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/16.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/14.jpg)
 
 - Reference the `Assembly` in the `Assembly Definition` of your tests, to be able to use `NSubstitute`.
 
-![Picture](/resources/blog/unity-7-unit-tests-nunit-nsubstitute/11.jpg)
+![Picture](/res/blog/unity-7-unit-tests-nunit-nsubstitute/11.jpg)
 
 ---
 

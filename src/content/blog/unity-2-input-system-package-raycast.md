@@ -30,9 +30,9 @@ author: 'z4gon'
 - Add a `Player Input` component to the Game Object, and set its behavior to `Invoke Unity Events`.
 - Bind the events to `OnMoveAction` and `OnPointerPosition`
 
-![Picture](/resources/blog/unity-2-input-system-package-raycast/1.jpg)
-![Picture](/resources/blog/unity-2-input-system-package-raycast/2.jpg)
-![Picture](/resources/blog/unity-2-input-system-package-raycast/3.jpg)
+![Picture](/res/blog/unity-2-input-system-package-raycast/1.jpg)
+![Picture](/res/blog/unity-2-input-system-package-raycast/2.jpg)
+![Picture](/res/blog/unity-2-input-system-package-raycast/3.jpg)
 
 ---
 
@@ -79,4 +79,4 @@ public void OnPointerPosition(InputAction.CallbackContext context)
 }
 ```
 
-![Picture](/resources/blog/unity-2-input-system-package-raycast/4.jpg)
+![Picture](/res/blog/unity-2-input-system-package-raycast/4.jpg)

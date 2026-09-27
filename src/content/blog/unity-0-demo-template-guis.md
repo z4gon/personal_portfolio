@@ -36,8 +36,8 @@ author: 'z4gon'
 
 A demo scene with view control to navigate the scene, and a playground to tweak values in the demo.
 
-![Picture](/resources/blog/unity-0-demo-template-guis/10.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/11.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/10.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/11.jpg)
 
 ## Input Actions
 
@@ -47,8 +47,8 @@ Using the `Input System Package` from Unity, create an `Input Actions` asset and
 - The `Control Type` will be set to `Stick`, so we can bind it to the `Gamepad Stick`.
 - The `Binding` will be set to the `Left Stick` and `Right Stick`, correspondingly.
 
-![Picture](/resources/blog/unity-0-demo-template-guis/1.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/2.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/1.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/2.jpg)
 
 ## On Screen Controls
 
@@ -57,17 +57,17 @@ We will need to add `Unity UI` Game Objects to represent the analog sticks on th
 - Adding the built in `On-Screen Stick` behavior to the image component will do it.
 - We need to set the `Control Path` of the on screen stick to `Left Stick [Gamepad]` and `Right Stick [Gamepad]` correspondingly.
 
-![Picture](/resources/blog/unity-0-demo-template-guis/3.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/4.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/5.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/3.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/4.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/5.jpg)
 
 ## Connecting to the CameraMovement
 
 - The `CameraMovement` classes will listen to events such as `OnPan` or `OnPointerDelta`.
 - And internally will use these inputs to move the camera accordingly.
 
-![Picture](/resources/blog/unity-0-demo-template-guis/6.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/7.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/6.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/7.jpg)
 
 ### Input Signals
 
@@ -166,5 +166,5 @@ private void HandleOrbit()
 - A set of `GUI` inputs to let you tweak values for the demo.
 - These can be hooked up via events to your objects and shaders, to showcase behavior.
 
-![Picture](/resources/blog/unity-0-demo-template-guis/8.jpg)
-![Picture](/resources/blog/unity-0-demo-template-guis/9.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/8.jpg)
+![Picture](/res/blog/unity-0-demo-template-guis/9.jpg)

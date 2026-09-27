@@ -157,7 +157,7 @@ fragment half4 uvs_fragment_shader(
 
 ### UVs Gradient
 
-![Picture](/resources/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/1.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/1.jpg)
 
 ---
 
@@ -279,4 +279,4 @@ fragment half4 texture_sample_fragment_shader(
 
 The Quad now renders the texture using the UV texture coordinates.
 
-![Picture](/resources/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-14-uvs-loading-sampling-textures/cover.jpg)

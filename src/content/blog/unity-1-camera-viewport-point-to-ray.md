@@ -63,7 +63,7 @@ private void PositionCorner(Vector2 viewportPoint, Transform corner)
 }
 ```
 
-![Picture](/resources/blog/unity-1-camera-viewport-point-to-ray/3.jpg)
+![Picture](/res/blog/unity-1-camera-viewport-point-to-ray/3.jpg)
 
 ---
 
@@ -91,4 +91,4 @@ void OnDrawGizmos()
 }
 ```
 
-![Picture](/resources/blog/unity-1-camera-viewport-point-to-ray/1.jpg)
+![Picture](/res/blog/unity-1-camera-viewport-point-to-ray/1.jpg)

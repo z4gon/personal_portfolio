@@ -38,7 +38,7 @@ struct Vertex {
 }
 ```
 
-![Picture](/resources/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/2.png)
+![Picture](/res/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/2.png)
 
 [Image Source 🔗](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives)
 
@@ -74,7 +74,7 @@ The attribute `[[ position ]]` prevents the values interpolation from happening 
 
 The interpolation happens at the **Rasterizer** stage.
 
-![Picture](/resources/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/3.png)
+![Picture](/res/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/3.png)
 
 [Image Source 🔗](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives)
 
@@ -110,7 +110,7 @@ vertex FragmentData basic_vertex_shader(
 }
 ```
 
-![Picture](/resources/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/4.png)
+![Picture](/res/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/4.png)
 
 [Image Source 🔗](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives)
 
@@ -129,7 +129,7 @@ fragment half4 basic_fragment_shader(FragmentData IN [[ stage_in ]]){
 }
 ```
 
-![Picture](/resources/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/5.png)
+![Picture](/res/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/5.png)
 
 [Image Source 🔗](https://developer.apple.com/documentation/metal/using_a_render_pipeline_to_render_primitives)
 
@@ -137,4 +137,4 @@ fragment half4 basic_fragment_shader(FragmentData IN [[ stage_in ]]){
 
 ## Result
 
-![Picture](/resources/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-3-vertex-fragment-shaders/cover.jpg)

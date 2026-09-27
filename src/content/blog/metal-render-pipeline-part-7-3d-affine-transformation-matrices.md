@@ -213,4 +213,4 @@ vertex FragmentData basic_vertex_shader(
 
 Now the mesh translates, scales and rotates.
 
-![Picture](/resources/blog/metal-render-pipeline-part-7-3d-affine-transformation-matrices/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-7-3d-affine-transformation-matrices/cover.jpg)

@@ -32,7 +32,7 @@ The **Mesh** now also sets an array of indices to go along the array of vertices
 
 This allows to eliminate duplicates and optimize memory utilization.
 
-![Picture](/resources/blog/metal-render-pipeline-part-9-draw-indexed-primitives/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-9-draw-indexed-primitives/cover.jpg)
 
 [Image Source 🔗](https://vulkan-tutorial.com/Vertex_buffers/Index_buffer)
 

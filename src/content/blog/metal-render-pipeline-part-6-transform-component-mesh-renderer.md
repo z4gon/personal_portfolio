@@ -27,7 +27,7 @@ author: 'z4gon'
 
 ## Transform
 
-![Picture](/resources/blog/metal-render-pipeline-part-6-transform-component-mesh-renderer/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-6-transform-component-mesh-renderer/cover.jpg)
 
 The **Transform** class will have information about **position**, **rotation** and **scale**.
 

@@ -156,7 +156,7 @@ private void StopShooting()
 
 ## All the Pieces Together
 
-![Picture](/resources/blog/unity-5-projectiles-object-pooling/1.jpg)
+![Picture](/res/blog/unity-5-projectiles-object-pooling/1.jpg)
 
 ---
 
@@ -165,7 +165,7 @@ private void StopShooting()
 - Given the perspective of the camera, projectiles that are aligned to the direction of the player do not follow a straight line in the viewport.
 - This is a problem since the player won't be able to aim for enemies in the top left and right corners.
 
-![Picture](/resources/blog/unity-5-projectiles-object-pooling/2.jpg)
+![Picture](/res/blog/unity-5-projectiles-object-pooling/2.jpg)
 
 - Using a `Raycast` again, to get the corresponding point at the top edge, we can make the `Player` to `LookAt` it.
 - This effectively makes the aiming dynamic, and keeps a straight like of projectiles in the viewport.
@@ -185,4 +185,4 @@ public void OnPointerPosition(InputAction.CallbackContext context)
 }
 ```
 
-![Picture](/resources/blog/unity-5-projectiles-object-pooling/3.jpg)
+![Picture](/res/blog/unity-5-projectiles-object-pooling/3.jpg)

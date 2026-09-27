@@ -36,8 +36,8 @@ author: 'z4gon'
 
 We just need to create a very basic **macOS** app using **Swift** and **Storyboards** for the UI.
 
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/1.jpg)
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/2.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/1.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/2.jpg)
 
 ---
 
@@ -49,9 +49,9 @@ Create a new **Cocoa Class** file, extending from **MTKView**, which in turn ext
 
 This will be connected to your main **Storyboard** for the **Game View**, where we will output the rendering of the pipeline.
 
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/3.jpg)
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/4.jpg)
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/5.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/3.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/4.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/5.jpg)
 
 ---
 
@@ -61,16 +61,16 @@ This will be connected to your main **Storyboard** for the **Game View**, where 
 
 The **Metal** Graphics **API** uses a **Command Structure** to handle all the petitions from the **CPU** to render graphics in the **GPU**.
 
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/6.png)
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/9.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/6.png)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/9.jpg)
 
 [Render Pipeline Descriptor Image Source](https://lcellentani.github.io/post/metal_introduction/)
 
 The **Command Buffers** contain the instructions the the **CPU** needs to execute.
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/7.png)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/7.png)
 
 The **Command Queue** holds all the **Command Buffers** and ensures they execute timely and in order. It also handles executions and results coming to/from **Compute Shaders**.
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/8.png)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/8.png)
 
 ### Resources
 
@@ -122,8 +122,8 @@ The **Command Queue** holds all the **Command Buffers** and ensures they execute
 
 For defining the **Shaders**, we need to create a **Metal** file.
 
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/10.jpg)
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/11.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/10.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/11.jpg)
 
 ```c
 #include <metal_stdlib>
@@ -225,4 +225,4 @@ class GameView: MTKView {
 
 ### Result
 
-![Picture](/resources/blog/metal-render-pipeline-part-1-setting-up-the-project/12.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-1-setting-up-the-project/12.jpg)

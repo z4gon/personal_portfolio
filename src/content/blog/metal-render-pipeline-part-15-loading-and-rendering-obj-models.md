@@ -375,4 +375,4 @@ let samusGameObject = ModelGameObject(
 
 The screen now shows the **3D model of Samus**, with its **base texture** correctly sampled.
 
-![Picture](/resources/blog/metal-render-pipeline-part-15-loading-and-rendering-obj-models/cover.jpg)
+![Picture](/res/blog/metal-render-pipeline-part-15-loading-and-rendering-obj-models/cover.jpg)
