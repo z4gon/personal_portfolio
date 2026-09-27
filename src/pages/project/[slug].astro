@@ -1,5 +1,5 @@
 ---
-import { getCollection, render, type CollectionEntry } from 'astro:content'
+import { render, type CollectionEntry } from 'astro:content'
 import Container from '../../components/page/Container'
 import GitHubIcon from '../../components/icons/GitHubIcon'
 import MultimediaCarousel from '../../components/media-carousel/MultimediaCarousel'
@@ -11,28 +11,28 @@ import TagsList from '../../components/project-details/TagsList'
 import YouTubeEmbed from '../../components/project-details/YouTubeEmbed'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
-import type { ProjectFull } from '../../models/Project'
-import { toProjectFull } from '../../utils/getProjects'
+import { getProjectEntries } from '../../models/Project'
 import formatDate from '../../utils/formatDate'
 import styles from './Project.module.scss'
 
 export async function getStaticPaths() {
-  const entries = await getCollection('projects')
+  const entries = await getProjectEntries()
 
-  return entries.flatMap((entry) =>
-    [entry.id, ...(entry.data.aliases ?? [])].map((slug) => ({
+  return entries.flatMap((entry) => {
+    const canonicalSlug = entry.slug
+
+    return [canonicalSlug, ...(entry.data.aliases ?? [])].map((slug) => ({
       params: { slug },
-      props: { project: toProjectFull(entry), entry },
-    })),
-  )
+      props: { entry },
+    }))
+  })
 }
 
 interface Props {
-  project: ProjectFull
   entry: CollectionEntry<'projects'>
 }
 
-const { project, entry } = Astro.props
+const { entry } = Astro.props
 const { Content } = await render(entry)
 const hasMarkdownContent = Boolean(entry.body?.trim())
 const {
@@ -43,6 +43,7 @@ const {
   implementationDetails,
   imagesUrls,
   videosUrls,
+  metaImageUrl,
   youtubeVideoIds = [],
   heroImageUrl,
   heroVideoUrl,
@@ -53,13 +54,13 @@ const {
   appleAppStoreUrl,
   googlePlayStoreUrl,
   itchioUrl,
-} = project
+} = entry.data
 ---
 
 <Base
   title={`${title} | Project`}
   description={description.join('') || subtitle}
-  imagePath={project.metaImageUrl}
+  imagePath={metaImageUrl}
 >
   <Page>
     <Container wide={false}>

@@ -5,7 +5,7 @@ import Container from '../components/page/Container'
 import Spacer from '../components/Spacer'
 import ProjectsGrid from '../components/projects-grid/ProjectsGrid'
 import Category from '../models/enums/Category'
-import { getProjects, toProjectPreview } from '../utils/getProjects'
+import { getProjectPreviews } from '../models/Project'
 
 const PAGE_SIZE = 8
 const categories = [
@@ -15,12 +15,9 @@ const categories = [
   Category.ComputeShaders,
 ]
 
-const projects = await getProjects()
+const projects = await getProjectPreviews()
 const projectsByCategory = categories.map((category) =>
-  projects
-    .filter((project) => project.category === category)
-    .sort((a, b) => a.priority - b.priority)
-    .map(toProjectPreview),
+  projects.filter((project) => project.category === category),
 )
 ---
 

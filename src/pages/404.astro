@@ -4,14 +4,11 @@ import ProjectsGrid from '../components/projects-grid/ProjectsGrid'
 import Spacer from '../components/Spacer'
 import Base from '../layouts/Base.astro'
 import Page from '../layouts/Page.astro'
-import { getProjects, toProjectPreview } from '../utils/getProjects'
+import { getProjectPreviews } from '../models/Project'
 import styles from './404.module.scss'
 
 const PROJECT_LIMIT = 4
-const projects = (await getProjects())
-  .sort((a, b) => a.priority - b.priority)
-  .slice(0, PROJECT_LIMIT)
-  .map(toProjectPreview)
+const projects = (await getProjectPreviews()).slice(0, PROJECT_LIMIT)
 ---
 
 <Base title="404 | Not Found">
