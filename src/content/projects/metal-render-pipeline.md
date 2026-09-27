@@ -1,5 +1,6 @@
 ---
 date: '2022-12-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/metal-render-pipeline
 priority: -4
 videosNames:
   - 7.mp4

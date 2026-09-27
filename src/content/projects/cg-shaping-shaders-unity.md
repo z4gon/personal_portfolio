@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-shaping-shaders-unity
 videosNames:
   - 20.mp4
   - 19.mp4

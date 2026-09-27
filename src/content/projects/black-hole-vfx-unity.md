@@ -1,5 +1,6 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/black-hole-vfx-unity
 priority: -6
 videosNames:
   - 1.mp4

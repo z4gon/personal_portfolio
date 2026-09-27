@@ -1,5 +1,6 @@
 ---
 date: '2023-02-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/metroidvania-godot-game
 imagesNames:
   - 0.jpg
   - 5.jpg

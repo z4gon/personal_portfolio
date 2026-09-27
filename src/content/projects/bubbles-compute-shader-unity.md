@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/bubbles-compute-shader-unity
 videosNames:
   - 9.mp4
   - 3.mp4

@@ -1,5 +1,6 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/character-skin-transition-shader-unity
 priority: -2
 videosNames:
   - 12.mp4

@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-texture-shaders-unity
 videosNames:
   - 3.mp4
   - 2.mp4

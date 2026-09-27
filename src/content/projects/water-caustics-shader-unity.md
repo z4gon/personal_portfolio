@@ -1,5 +1,6 @@
 ---
 date: '2023-01-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/water-caustics-shader-unity
 priority: -5
 videosNames:
   - 1.mp4

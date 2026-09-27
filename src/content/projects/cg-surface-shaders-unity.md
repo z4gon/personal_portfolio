@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-surface-shaders-unity
 videosNames:
   - 9.mp4
   - 8a.mp4

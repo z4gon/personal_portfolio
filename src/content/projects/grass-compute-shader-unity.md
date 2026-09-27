@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/grass-compute-shader-unity
 priority: -5
 videosNames:
   - 11.mp4

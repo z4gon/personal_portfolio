@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-perlin-noise-shader-unity
 videosNames:
   - 4.mp4
   - 3.mp4

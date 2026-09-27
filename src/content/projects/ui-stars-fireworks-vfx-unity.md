@@ -1,5 +1,6 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/ui-stars-fireworks-vfx-unity
 priority: -4
 videosNames:
   - 8.mp4

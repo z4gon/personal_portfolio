@@ -1,5 +1,6 @@
 ---
 date: '2022-09-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/ice-attack-vfx-unity
 priority: -5
 videosNames:
   - 9.mp4

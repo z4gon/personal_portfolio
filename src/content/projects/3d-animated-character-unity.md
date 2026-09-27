@@ -1,5 +1,6 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/3d-animated-character-unity
 priority: -4
 imagesNames:
   - 34.jpg

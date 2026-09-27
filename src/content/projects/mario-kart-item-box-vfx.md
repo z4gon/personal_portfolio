@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/mario-kart-item-box-vfx
 priority: -4
 videosNames:
   - 13.mp4

@@ -18,6 +18,7 @@ export const toProjectFull = ({
 }: CollectionEntry<'projects'>): ProjectFull => ({
   id,
   ...data,
+  isPrivateRepo,
   gitHubUrl: isPrivateRepo
     ? undefined
     : gitHubUrl || `https://github.com/${githubUser}/${id}`,

@@ -15,7 +15,7 @@ youtubeVideoIds:
 title: The Star Cat
 subtitle: Published Mobile Game for iOS & Android
 description:
-  - I am the solo indie developer on the project. Managed everything from
+  - I was the solo indie developer on the project. Managed everything from
     conception, art & programming until deployment in AppStore and PlayStore.
   - A stylish 2D Side-Scroller with a cat character that shoots a weapon. The
     player has to destroy enemies and avoid obstacles.
@@ -48,8 +48,6 @@ links:
   - href: https://nochegames.com
     text: Noche Games Website
 itchioUrl: https://nochegames.itch.io/star-cat
-appleAppStoreUrl: https://apps.apple.com/us/app/the-star-cat/id1544668944
-googlePlayStoreUrl: https://play.google.com/store/apps/details?id=com.NightOwlGames.Starcat
 isPrivateRepo: true
 technology: UnityEngine
 category: Game Dev

@@ -1,5 +1,6 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
+gitHubUrl: https://github.com/z4gon/gamedev/tree/main/tessellation-unity
 heroVideoName: 1.mp4
 title: Tessellation
 subtitle: Tessellation in Unity, both with Cg for Surface Shaders and HDRP with
