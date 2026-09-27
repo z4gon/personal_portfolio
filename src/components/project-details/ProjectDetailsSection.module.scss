@@ -1,0 +1,20 @@
+.section {
+  padding: 30px 0 0;
+
+  .sectionTitle {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 30px 20px 0;
+
+    &.mobileFullWidth {
+      padding: 10px 0;
+
+      .sectionTitle {
+        padding: 0 20px;
+      }
+    }
+  }
+}
