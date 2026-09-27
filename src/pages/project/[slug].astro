@@ -1,0 +1,196 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content'
+import Container from '../../components/page/Container'
+import GitHubIcon from '../../components/icons/GitHubIcon'
+import MultimediaCarousel from '../../components/media-carousel/MultimediaCarousel'
+import ExternalLink from '../../components/link/ExternalLink'
+import ProjectDetailsSection from '../../components/project-details/ProjectDetailsSection'
+import Tag from '../../components/project-details/Tag'
+import StoreLinks from '../../components/project-details/StoreLinks'
+import TagsList from '../../components/project-details/TagsList'
+import YouTubeEmbed from '../../components/project-details/YouTubeEmbed'
+import Base from '../../layouts/Base.astro'
+import Page from '../../layouts/Page.astro'
+import type { ProjectFull } from '../../models/Project'
+import { toProjectFull } from '../../utils/getProjects'
+import styles from './Project.module.scss'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('projects')
+
+  return entries.flatMap((entry) =>
+    [entry.id, ...(entry.data.aliases ?? [])].map((slug) => ({
+      params: { slug },
+      props: { project: toProjectFull(entry), entry },
+    })),
+  )
+}
+
+interface Props {
+  project: ProjectFull
+  entry: CollectionEntry<'projects'>
+}
+
+const { project, entry } = Astro.props
+const { Content } = await render(entry)
+const hasMarkdownContent = Boolean(entry.body?.trim())
+const {
+  title,
+  subtitle,
+  date,
+  description,
+  implementationDetails,
+  imagesUrls,
+  videosUrls,
+  youtubeVideoIds = [],
+  heroImageUrl,
+  heroVideoUrl,
+  technology,
+  tags,
+  links,
+  gitHubUrl,
+  appleAppStoreUrl,
+  googlePlayStoreUrl,
+  itchioUrl,
+} = project
+const createdAtStr = date.toLocaleDateString('en-CA', {
+  year: 'numeric',
+  month: '2-digit',
+  timeZone: 'UTC',
+})
+---
+
+<Base
+  title={`${title} | Project`}
+  description={description.join('') || subtitle}
+  imagePath={project.metaImageUrl}
+>
+  <Page>
+    <Container wide={false}>
+      <div class={styles.details}>
+        {/* Project-specific YouTube videos. */}
+        {youtubeVideoIds?.length > 0 && (
+          <ProjectDetailsSection mobileFullWidth>
+            {youtubeVideoIds.map((videoId) => (
+              <div class={styles.youtube}>
+                <YouTubeEmbed videoId={videoId} title={title} />
+              </div>
+            ))}
+          </ProjectDetailsSection>
+        )}
+
+        {/* Browse the project's gallery images and videos. */}
+        <MultimediaCarousel
+          imagesUrls={imagesUrls}
+          videosUrls={videosUrls}
+          client:load
+        />
+
+        {/* Show the project's featured image when available. */}
+        {heroImageUrl && (
+          <ProjectDetailsSection mobileFullWidth>
+            <img class={styles.heroImage} src={heroImageUrl} alt="Preview" />
+          </ProjectDetailsSection>
+        )}
+
+        {/* Show the project's featured video when available. */}
+        {heroVideoUrl && (
+          <ProjectDetailsSection mobileFullWidth>
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              controls
+              class={styles.heroVideo}
+            >
+              <source src={heroVideoUrl} type="video/mp4" />
+            </video>
+          </ProjectDetailsSection>
+        )}
+
+        <article class={styles.card}>
+          {/* Project title, date, technology, tags, and GitHub link. */}
+          <ProjectDetailsSection className={styles.header}>
+            <div class={styles.information}>
+              <h1 class={styles.title}>
+                {technology && (
+                  <img
+                    class={styles.technology}
+                    src={`/img/technologies/${technology}.png`}
+                    alt={technology}
+                  />
+                )}
+                {title}
+                <Tag className={styles.date} secondary>
+                  {createdAtStr}
+                </Tag>
+              </h1>
+              <span class={styles.subtitle}>{subtitle}</span>
+              <TagsList tags={tags} />
+            </div>
+            {gitHubUrl && (
+              <ExternalLink
+                href={gitHubUrl}
+                className={styles.gitHubLink}
+                Icon={GitHubIcon}
+              >
+                View on GitHub
+              </ExternalLink>
+            )}
+          </ProjectDetailsSection>
+
+          {/* Store badges for downloadable or purchasable projects. */}
+          {(appleAppStoreUrl || googlePlayStoreUrl || itchioUrl) && (
+            <ProjectDetailsSection>
+              <StoreLinks
+                appleAppStoreUrl={appleAppStoreUrl}
+                googlePlayStoreUrl={googlePlayStoreUrl}
+                itchioUrl={itchioUrl}
+              />
+            </ProjectDetailsSection>
+          )}
+
+          {/* Additional project or documentation links. */}
+          {links && links.length > 0 && (
+            <ProjectDetailsSection className={styles.externalLinks}>
+              <div class={styles.externalLinks}>
+                {links.map((link) => (
+                  <ExternalLink href={link.href}>{link.text}</ExternalLink>
+                ))}
+              </div>
+            </ProjectDetailsSection>
+          )}
+
+          {/* Project overview paragraphs. */}
+          {description.length > 0 && (
+            <ProjectDetailsSection className={styles.description}>
+              {description.map((paragraph) => (
+                <p class={styles.descriptionItem}>{paragraph}</p>
+              ))}
+            </ProjectDetailsSection>
+          )}
+
+          {/* Technical implementation notes. */}
+          {implementationDetails &&
+            implementationDetails.length > 0 &&
+            !hasMarkdownContent && (
+              <ProjectDetailsSection title="Implementation">
+                <ul class={styles.implementationDetails}>
+                  {implementationDetails.map((detail) => (
+                    <li class={styles.bullet}>{detail}</li>
+                  ))}
+                </ul>
+              </ProjectDetailsSection>
+            )}
+
+          {hasMarkdownContent && (
+            <div class={styles.markdownContent}>
+              <Content />
+            </div>
+          )}
+        </article>
+      </div>
+    </Container>
+  </Page>
+</Base>

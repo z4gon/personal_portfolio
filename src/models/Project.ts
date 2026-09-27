@@ -41,6 +41,7 @@ export const projectSchema = z.object({
 
   links: z.array(linkSchema).optional(),
   gitHubUrl: z.string().optional(),
+  isPrivateRepo: z.boolean().optional(),
 
   // store links
   appleAppStoreUrl: z.string().optional(),

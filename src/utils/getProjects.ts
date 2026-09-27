@@ -1,14 +1,26 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
+import { githubUser } from '../config'
 import type { ProjectFull, ProjectPreview } from '../models/Project'
 
 const resourcesUrl = (id: string, name: string) => `/res/projects/${id}/${name}`
 
-const withDerivedUrls = ({
+export const toProjectFull = ({
   id,
-  data: { heroImageName, heroVideoName, imagesNames, videosNames, ...data },
+  data: {
+    heroImageName,
+    heroVideoName,
+    imagesNames,
+    videosNames,
+    isPrivateRepo,
+    gitHubUrl,
+    ...data
+  },
 }: CollectionEntry<'projects'>): ProjectFull => ({
   id,
   ...data,
+  gitHubUrl: isPrivateRepo
+    ? undefined
+    : gitHubUrl || `https://github.com/${githubUser}/${id}`,
 
   thumbnailUrl: resourcesUrl(id, 'thumbnail.mp4'),
   metaImageUrl: resourcesUrl(id, 'thumbnail.gif'),
@@ -22,7 +34,7 @@ const withDerivedUrls = ({
 
 export const getProjects = async (): Promise<ProjectFull[]> => {
   const entries = await getCollection('projects')
-  return entries.map(withDerivedUrls)
+  return entries.map(toProjectFull)
 }
 
 export const toProjectPreview = ({
