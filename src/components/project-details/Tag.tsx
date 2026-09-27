@@ -1,6 +1,6 @@
 import type { ComponentChildren } from 'preact'
 import styles from './Tag.module.scss'
-import classNames from '../utils/classNames'
+import classNames from '../../utils/classNames'
 
 interface TagProps {
   children?: ComponentChildren
