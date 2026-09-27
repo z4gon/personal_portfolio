@@ -1,4 +1,4 @@
-type SpacerAmount = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type SpacerAmount = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl'
 
 const amountToRem: Record<SpacerAmount, string> = {
   xs: '0.25rem',
@@ -6,6 +6,8 @@ const amountToRem: Record<SpacerAmount, string> = {
   md: '1rem',
   lg: '2rem',
   xl: '4rem',
+  xxl: '8rem',
+  xxxl: '10rem',
 }
 
 interface SpacerProps {

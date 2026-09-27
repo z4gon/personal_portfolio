@@ -1,0 +1,35 @@
+---
+import Container from '../components/page/Container'
+import ProjectsGrid from '../components/projects-grid/ProjectsGrid'
+import Spacer from '../components/Spacer'
+import Base from '../layouts/Base.astro'
+import Page from '../layouts/Page.astro'
+import { getProjects, toProjectPreview } from '../utils/getProjects'
+import styles from './404.module.scss'
+
+const PROJECT_LIMIT = 4
+const projects = (await getProjects())
+  .sort((a, b) => a.priority - b.priority)
+  .slice(0, PROJECT_LIMIT)
+  .map(toProjectPreview)
+---
+
+<Base title="404 | Not Found">
+  <Page>
+    <Container>
+      <Spacer amount="xxl" />
+
+      <h1 class={styles.title}>404</h1>
+      <h2 class={styles.subtitle}>Not Found</h2>
+
+      <p class={styles.description}>We couldn&apos;t find that page. 👻</p>
+      <p class={styles.description}>
+        Here are a few projects that might interest you instead. 👀
+      </p>
+
+      <Spacer amount="xl" />
+      <ProjectsGrid projects={projects} />
+      <Spacer amount="xxxl" />
+    </Container>
+  </Page>
+</Base>
