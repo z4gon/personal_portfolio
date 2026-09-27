@@ -15,3 +15,4 @@
 - Always prefer one main default export per file; use named exports only for secondary items.
 - Type Preact functional components like this: `const Foo = ({ bar }: FooProps) => ...` — annotate the props parameter, don't annotate the const.
 - Trust deprecation messages literally: try importing the suggested replacement from the package namespace (e.g. `import type { HTMLAttributes } from "preact"`) before assuming it doesn't exist.
+- Keep SCSS nested to mirror the corresponding HTML structure.
