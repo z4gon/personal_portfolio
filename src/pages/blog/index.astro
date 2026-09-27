@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content'
 import PostsGrid from '../../components/blog/PostsGrid'
 import Container from '../../components/page/Container'
 import Spacer from '../../components/Spacer'
+import { authors } from '../../config'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
 import styles from './index.module.scss'
@@ -10,10 +11,11 @@ import styles from './index.module.scss'
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .map(({ id, data }) => ({
-    id,
+    slug: id,
     title: data.title,
-    author: data.author,
+    author: authors[data.author],
     date: data.date.toISOString(),
+    excerpt: data.excerpt,
     heroImageUrl: data.heroImageUrl,
   }))
 ---
