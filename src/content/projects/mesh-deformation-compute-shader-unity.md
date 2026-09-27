@@ -1,7 +1,9 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/mesh-deformation-compute-shader-unity
-heroVideoName: 1.mp4
+thumbnailUrl: /res/projects/mesh-deformation-compute-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/mesh-deformation-compute-shader-unity/thumbnail.gif
+heroVideoUrl: /res/projects/mesh-deformation-compute-shader-unity/1.mp4
 title: Mesh deformation Compute Shader
 subtitle: Written in HLSL, for the Built-in RP in Unity
 implementationDetails:

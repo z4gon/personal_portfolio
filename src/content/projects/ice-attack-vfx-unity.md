@@ -1,17 +1,19 @@
 ---
 date: '2022-09-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/ice-attack-vfx-unity
+thumbnailUrl: /res/projects/ice-attack-vfx-unity/thumbnail.mp4
+metaImageUrl: /res/projects/ice-attack-vfx-unity/thumbnail.gif
 priority: -5
-videosNames:
-  - 9.mp4
-  - 8-waves.mp4
-  - 7-snow-spike-vfx.mp4
-  - 6-snow-mesh.mp4
-  - 5-spikes.mp4
-  - 4-spike-test.mp4
-  - 3-dissolve-fresnel.mp4
-  - 2-spike-mesh.mp4
-  - 1-ground-textures.mp4
+videosUrls:
+  - /res/projects/ice-attack-vfx-unity/9.mp4
+  - /res/projects/ice-attack-vfx-unity/8-waves.mp4
+  - /res/projects/ice-attack-vfx-unity/7-snow-spike-vfx.mp4
+  - /res/projects/ice-attack-vfx-unity/6-snow-mesh.mp4
+  - /res/projects/ice-attack-vfx-unity/5-spikes.mp4
+  - /res/projects/ice-attack-vfx-unity/4-spike-test.mp4
+  - /res/projects/ice-attack-vfx-unity/3-dissolve-fresnel.mp4
+  - /res/projects/ice-attack-vfx-unity/2-spike-mesh.mp4
+  - /res/projects/ice-attack-vfx-unity/1-ground-textures.mp4
 youtubeVideoIds:
   - h4akS-e__9E
 title: Ice Attack VFX

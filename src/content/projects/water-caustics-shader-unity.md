@@ -1,28 +1,30 @@
 ---
 date: '2023-01-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/water-caustics-shader-unity
+thumbnailUrl: /res/projects/water-caustics-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/water-caustics-shader-unity/thumbnail.gif
 priority: -5
-videosNames:
-  - 1.mp4
-  - 2.mp4
-  - 3.mp4
-  - 4.mp4
-  - 5.mp4
-  - 6.mp4
-  - 7.mp4
-  - 8.mp4
-  - 9.mp4
-imagesNames:
-  - 0.jpg
-  - 5.jpg
-  - 6.jpg
-  - 7.jpg
-  - 8.jpg
-  - 9.jpg
-  - 10.jpg
-  - 11.jpg
-  - 12.jpg
-  - 13.jpg
+videosUrls:
+  - /res/projects/water-caustics-shader-unity/1.mp4
+  - /res/projects/water-caustics-shader-unity/2.mp4
+  - /res/projects/water-caustics-shader-unity/3.mp4
+  - /res/projects/water-caustics-shader-unity/4.mp4
+  - /res/projects/water-caustics-shader-unity/5.mp4
+  - /res/projects/water-caustics-shader-unity/6.mp4
+  - /res/projects/water-caustics-shader-unity/7.mp4
+  - /res/projects/water-caustics-shader-unity/8.mp4
+  - /res/projects/water-caustics-shader-unity/9.mp4
+imagesUrls:
+  - /res/projects/water-caustics-shader-unity/0.jpg
+  - /res/projects/water-caustics-shader-unity/5.jpg
+  - /res/projects/water-caustics-shader-unity/6.jpg
+  - /res/projects/water-caustics-shader-unity/7.jpg
+  - /res/projects/water-caustics-shader-unity/8.jpg
+  - /res/projects/water-caustics-shader-unity/9.jpg
+  - /res/projects/water-caustics-shader-unity/10.jpg
+  - /res/projects/water-caustics-shader-unity/11.jpg
+  - /res/projects/water-caustics-shader-unity/12.jpg
+  - /res/projects/water-caustics-shader-unity/13.jpg
 youtubeVideoIds:
   - ofLYUlhoxAI
 title: Water Caustics Shader

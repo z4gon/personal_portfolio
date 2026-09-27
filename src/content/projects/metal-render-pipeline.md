@@ -1,24 +1,26 @@
 ---
 date: '2022-12-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/metal-render-pipeline
+thumbnailUrl: /res/projects/metal-render-pipeline/thumbnail.mp4
+metaImageUrl: /res/projects/metal-render-pipeline/thumbnail.gif
 priority: -4
-videosNames:
-  - 7.mp4
-  - 6.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
-imagesNames:
-  - 8.jpg
-  - 7.jpg
-  - 6.jpg
-  - 5.jpg
-  - 4.jpg
-  - 3.jpg
-  - 2.jpg
-  - 1.jpg
+videosUrls:
+  - /res/projects/metal-render-pipeline/7.mp4
+  - /res/projects/metal-render-pipeline/6.mp4
+  - /res/projects/metal-render-pipeline/5.mp4
+  - /res/projects/metal-render-pipeline/4.mp4
+  - /res/projects/metal-render-pipeline/3.mp4
+  - /res/projects/metal-render-pipeline/2.mp4
+  - /res/projects/metal-render-pipeline/1.mp4
+imagesUrls:
+  - /res/projects/metal-render-pipeline/8.jpg
+  - /res/projects/metal-render-pipeline/7.jpg
+  - /res/projects/metal-render-pipeline/6.jpg
+  - /res/projects/metal-render-pipeline/5.jpg
+  - /res/projects/metal-render-pipeline/4.jpg
+  - /res/projects/metal-render-pipeline/3.jpg
+  - /res/projects/metal-render-pipeline/2.jpg
+  - /res/projects/metal-render-pipeline/1.jpg
 youtubeVideoIds:
   - lGVy9tTWq2E
 title: 'From Scratch: Metal Render Pipeline'

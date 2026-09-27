@@ -1,20 +1,22 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/ui-stars-fireworks-vfx-unity
+thumbnailUrl: /res/projects/ui-stars-fireworks-vfx-unity/thumbnail.mp4
+metaImageUrl: /res/projects/ui-stars-fireworks-vfx-unity/thumbnail.gif
 priority: -4
-videosNames:
-  - 8.mp4
-imagesNames:
-  - 9.jpg
-  - 11.jpg
-  - 10.jpg
-  - 4.jpg
-  - 7.jpg
-  - 6.jpg
-  - 5.jpg
-  - 3.jpg
-  - 2.jpg
-  - 1.jpg
+videosUrls:
+  - /res/projects/ui-stars-fireworks-vfx-unity/8.mp4
+imagesUrls:
+  - /res/projects/ui-stars-fireworks-vfx-unity/9.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/11.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/10.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/4.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/7.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/6.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/5.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/3.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/2.jpg
+  - /res/projects/ui-stars-fireworks-vfx-unity/1.jpg
 youtubeVideoIds:
   - lmJEb4jdH2Q
 title: Stars and Fireworks UI VFX

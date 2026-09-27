@@ -1,24 +1,26 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/mario-kart-item-box-vfx
+thumbnailUrl: /res/projects/mario-kart-item-box-vfx/thumbnail.mp4
+metaImageUrl: /res/projects/mario-kart-item-box-vfx/thumbnail.gif
 priority: -4
-videosNames:
-  - 13.mp4
-  - 12.mp4
-  - 11.mp4
-  - 10.mp4
-  - 9.mp4
-  - 8.mp4
-  - 7.mp4
-  - 6.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
-imagesNames:
-  - 14.jpg
-  - 15.jpg
+videosUrls:
+  - /res/projects/mario-kart-item-box-vfx/13.mp4
+  - /res/projects/mario-kart-item-box-vfx/12.mp4
+  - /res/projects/mario-kart-item-box-vfx/11.mp4
+  - /res/projects/mario-kart-item-box-vfx/10.mp4
+  - /res/projects/mario-kart-item-box-vfx/9.mp4
+  - /res/projects/mario-kart-item-box-vfx/8.mp4
+  - /res/projects/mario-kart-item-box-vfx/7.mp4
+  - /res/projects/mario-kart-item-box-vfx/6.mp4
+  - /res/projects/mario-kart-item-box-vfx/5.mp4
+  - /res/projects/mario-kart-item-box-vfx/4.mp4
+  - /res/projects/mario-kart-item-box-vfx/3.mp4
+  - /res/projects/mario-kart-item-box-vfx/2.mp4
+  - /res/projects/mario-kart-item-box-vfx/1.mp4
+imagesUrls:
+  - /res/projects/mario-kart-item-box-vfx/14.jpg
+  - /res/projects/mario-kart-item-box-vfx/15.jpg
 youtubeVideoIds:
   - 5UPacp2vzOk
 title: Mario Kart Item Box VFX

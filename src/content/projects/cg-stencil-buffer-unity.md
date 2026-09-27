@@ -1,7 +1,9 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-stencil-buffer-unity
-heroVideoName: 1.mp4
+thumbnailUrl: /res/projects/cg-stencil-buffer-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-stencil-buffer-unity/thumbnail.gif
+heroVideoUrl: /res/projects/cg-stencil-buffer-unity/1.mp4
 title: X-Ray Stencil Buffer
 subtitle: X-Ray shader using the stencil buffer in Unity 2021.3.10f1 Built-in RP
   written in the Cg programming language

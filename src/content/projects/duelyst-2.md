@@ -1,11 +1,13 @@
 ---
 date: '2023-01-15T00:00:00.000Z'
+thumbnailUrl: /res/projects/duelyst-2/thumbnail.mp4
+metaImageUrl: /res/projects/duelyst-2/thumbnail.gif
 priority: -200
-imagesNames:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
-  - 4.jpg
+imagesUrls:
+  - /res/projects/duelyst-2/1.jpg
+  - /res/projects/duelyst-2/2.jpg
+  - /res/projects/duelyst-2/3.jpg
+  - /res/projects/duelyst-2/4.jpg
 title: Duelyst 2
 subtitle: Contract Work as Game Developer / Technical Artist
 description:
@@ -29,7 +31,6 @@ links:
     text: Download from Steam
   - href: https://www.dreamslothgames.com/
     text: Dream Sloth Games
-isPrivateRepo: true
 technology: GodotEngine
 category: Game Dev
 ---

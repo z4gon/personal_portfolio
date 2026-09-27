@@ -1,17 +1,19 @@
 ---
 date: '2022-07-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/water-shader-unity
+thumbnailUrl: /res/projects/water-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/water-shader-unity/thumbnail.gif
 priority: -2
-videosNames:
-  - cliff.mp4
-  - lake.mp4
-  - water_waves.mp4
-  - water_depth_colored.mp4
-  - water_depth_refracted.mp4
-  - water_refraction.mp4
-  - water_foam.mp4
-  - water_depth.mp4
-  - water_colors.mp4
+videosUrls:
+  - /res/projects/water-shader-unity/cliff.mp4
+  - /res/projects/water-shader-unity/lake.mp4
+  - /res/projects/water-shader-unity/water_waves.mp4
+  - /res/projects/water-shader-unity/water_depth_colored.mp4
+  - /res/projects/water-shader-unity/water_depth_refracted.mp4
+  - /res/projects/water-shader-unity/water_refraction.mp4
+  - /res/projects/water-shader-unity/water_foam.mp4
+  - /res/projects/water-shader-unity/water_depth.mp4
+  - /res/projects/water-shader-unity/water_colors.mp4
 youtubeVideoIds:
   - ag5X-ObzOY8
   - 0AfmcD5DlXs

@@ -1,15 +1,17 @@
 ---
 date: '2022-07-01T00:00:00.000Z'
+thumbnailUrl: /res/projects/starcat/thumbnail.mp4
+metaImageUrl: /res/projects/starcat/thumbnail.gif
 priority: -100
-videosNames:
-  - 1.mp4
-imagesNames:
-  - screen-1.jpg
-  - screen-2.jpg
-  - screen-3.jpg
-  - screen-4.jpg
-  - screen-5.jpg
-  - screen-6.jpg
+videosUrls:
+  - /res/projects/starcat/1.mp4
+imagesUrls:
+  - /res/projects/starcat/screen-1.jpg
+  - /res/projects/starcat/screen-2.jpg
+  - /res/projects/starcat/screen-3.jpg
+  - /res/projects/starcat/screen-4.jpg
+  - /res/projects/starcat/screen-5.jpg
+  - /res/projects/starcat/screen-6.jpg
 youtubeVideoIds:
   - 3EQ1cwSD_BY
 title: The Star Cat
@@ -48,7 +50,6 @@ links:
   - href: https://nochegames.com
     text: Noche Games Website
 itchioUrl: https://nochegames.itch.io/star-cat
-isPrivateRepo: true
 technology: UnityEngine
 category: Game Dev
 ---

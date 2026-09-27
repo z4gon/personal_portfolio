@@ -1,16 +1,18 @@
 ---
 date: '2023-02-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/metroidvania-godot-game
-imagesNames:
-  - 0.jpg
-  - 5.jpg
-  - 4.jpg
-  - 3.jpg
-  - 2.jpg
-  - 1.jpg
-videosNames:
-  - 1.mp4
-  - 2.mp4
+thumbnailUrl: /res/projects/metroidvania-godot-game/thumbnail.mp4
+metaImageUrl: /res/projects/metroidvania-godot-game/thumbnail.gif
+imagesUrls:
+  - /res/projects/metroidvania-godot-game/0.jpg
+  - /res/projects/metroidvania-godot-game/5.jpg
+  - /res/projects/metroidvania-godot-game/4.jpg
+  - /res/projects/metroidvania-godot-game/3.jpg
+  - /res/projects/metroidvania-godot-game/2.jpg
+  - /res/projects/metroidvania-godot-game/1.jpg
+videosUrls:
+  - /res/projects/metroidvania-godot-game/1.mp4
+  - /res/projects/metroidvania-godot-game/2.mp4
 youtubeVideoIds:
   - P3s1gVc3-zM
 title: Metroidvania Game in Godot Engine

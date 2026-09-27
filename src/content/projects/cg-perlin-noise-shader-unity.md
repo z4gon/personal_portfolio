@@ -1,11 +1,13 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-perlin-noise-shader-unity
-videosNames:
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
+thumbnailUrl: /res/projects/cg-perlin-noise-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-perlin-noise-shader-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-perlin-noise-shader-unity/4.mp4
+  - /res/projects/cg-perlin-noise-shader-unity/3.mp4
+  - /res/projects/cg-perlin-noise-shader-unity/2.mp4
+  - /res/projects/cg-perlin-noise-shader-unity/1.mp4
 youtubeVideoIds:
   - d1HJ0O3btq0
 title: Perlin Noise Shader

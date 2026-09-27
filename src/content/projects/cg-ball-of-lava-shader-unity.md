@@ -4,14 +4,16 @@ aliases:
 priority: -1
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-ball-of-lava-shader-unity
-videosNames:
-  - 7.mp4
-  - 6.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
+thumbnailUrl: /res/projects/cg-ball-of-lava-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-ball-of-lava-shader-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-ball-of-lava-shader-unity/7.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/6.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/5.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/4.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/3.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/2.mp4
+  - /res/projects/cg-ball-of-lava-shader-unity/1.mp4
 youtubeVideoIds:
   - r5qDHvfYG9c
 title: Ball of Lava Shader

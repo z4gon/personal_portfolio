@@ -1,25 +1,27 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/sci-fi-shield-shader-unity
+thumbnailUrl: /res/projects/sci-fi-shield-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/sci-fi-shield-shader-unity/thumbnail.gif
 priority: -3
-videosNames:
-  - 1.mp4
-  - 2.mp4
-imagesNames:
-  - 21.jpg
-  - 20.jpg
-  - 16.jpg
-  - 15.jpg
-  - 14.jpg
-  - 13.jpg
-  - 12.jpg
-  - 11.jpg
-  - 10.jpg
-  - 9.jpg
-  - 7.jpg
-  - 6.jpg
-  - 5.jpg
-  - 4.jpg
+videosUrls:
+  - /res/projects/sci-fi-shield-shader-unity/1.mp4
+  - /res/projects/sci-fi-shield-shader-unity/2.mp4
+imagesUrls:
+  - /res/projects/sci-fi-shield-shader-unity/21.jpg
+  - /res/projects/sci-fi-shield-shader-unity/20.jpg
+  - /res/projects/sci-fi-shield-shader-unity/16.jpg
+  - /res/projects/sci-fi-shield-shader-unity/15.jpg
+  - /res/projects/sci-fi-shield-shader-unity/14.jpg
+  - /res/projects/sci-fi-shield-shader-unity/13.jpg
+  - /res/projects/sci-fi-shield-shader-unity/12.jpg
+  - /res/projects/sci-fi-shield-shader-unity/11.jpg
+  - /res/projects/sci-fi-shield-shader-unity/10.jpg
+  - /res/projects/sci-fi-shield-shader-unity/9.jpg
+  - /res/projects/sci-fi-shield-shader-unity/7.jpg
+  - /res/projects/sci-fi-shield-shader-unity/6.jpg
+  - /res/projects/sci-fi-shield-shader-unity/5.jpg
+  - /res/projects/sci-fi-shield-shader-unity/4.jpg
 youtubeVideoIds:
   - yD-qgkpHubs
 title: Sci-Fi Shield Shader

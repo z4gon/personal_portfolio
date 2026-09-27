@@ -1,10 +1,12 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-clipping-shader
-videosNames:
-  - 2.mp4
-  - 3a.mp4
-  - 3b.mp4
+thumbnailUrl: /res/projects/cg-clipping-shader/thumbnail.mp4
+metaImageUrl: /res/projects/cg-clipping-shader/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-clipping-shader/2.mp4
+  - /res/projects/cg-clipping-shader/3a.mp4
+  - /res/projects/cg-clipping-shader/3b.mp4
 title: Clipping Pixels
 subtitle: Clipping pixels in a Built-in RP shader in Unity, using the Cg
   programming language

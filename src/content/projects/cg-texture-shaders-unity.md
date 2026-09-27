@@ -1,11 +1,13 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-texture-shaders-unity
-videosNames:
-  - 3.mp4
-  - 2.mp4
-  - 1d.mp4
-  - 1b.mp4
+thumbnailUrl: /res/projects/cg-texture-shaders-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-texture-shaders-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-texture-shaders-unity/3.mp4
+  - /res/projects/cg-texture-shaders-unity/2.mp4
+  - /res/projects/cg-texture-shaders-unity/1d.mp4
+  - /res/projects/cg-texture-shaders-unity/1b.mp4
 youtubeVideoIds:
   - G0M9q3efZ1M
 title: Cg Texture Shaders

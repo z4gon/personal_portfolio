@@ -1,17 +1,19 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-transparency-shaders-unity
-videosNames:
-  - 11.mp4
-  - 10.mp4
-  - 8.mp4
-  - 7.mp4
-  - 6.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
+thumbnailUrl: /res/projects/cg-transparency-shaders-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-transparency-shaders-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-transparency-shaders-unity/11.mp4
+  - /res/projects/cg-transparency-shaders-unity/10.mp4
+  - /res/projects/cg-transparency-shaders-unity/8.mp4
+  - /res/projects/cg-transparency-shaders-unity/7.mp4
+  - /res/projects/cg-transparency-shaders-unity/6.mp4
+  - /res/projects/cg-transparency-shaders-unity/5.mp4
+  - /res/projects/cg-transparency-shaders-unity/4.mp4
+  - /res/projects/cg-transparency-shaders-unity/3.mp4
+  - /res/projects/cg-transparency-shaders-unity/2.mp4
+  - /res/projects/cg-transparency-shaders-unity/1.mp4
 title: Transparent Shaders
 subtitle: Transparency shaders written in Cg for the Built-in RP in Unity
 implementationDetails:

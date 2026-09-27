@@ -1,28 +1,30 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/black-hole-vfx-unity
+thumbnailUrl: /res/projects/black-hole-vfx-unity/thumbnail.mp4
+metaImageUrl: /res/projects/black-hole-vfx-unity/thumbnail.gif
 priority: -6
-videosNames:
-  - 1.mp4
-  - 2.mp4
-imagesNames:
-  - 21.jpg
-  - 20.jpg
-  - 19.jpg
-  - 18.jpg
-  - 17.jpg
-  - 16.jpg
-  - 15.jpg
-  - 10.jpg
-  - 9.jpg
-  - 8.jpg
-  - 7.jpg
-  - 6.jpg
-  - 5.jpg
-  - 4.jpg
-  - 3.jpg
-  - 2.jpg
-  - 1.jpg
+videosUrls:
+  - /res/projects/black-hole-vfx-unity/1.mp4
+  - /res/projects/black-hole-vfx-unity/2.mp4
+imagesUrls:
+  - /res/projects/black-hole-vfx-unity/21.jpg
+  - /res/projects/black-hole-vfx-unity/20.jpg
+  - /res/projects/black-hole-vfx-unity/19.jpg
+  - /res/projects/black-hole-vfx-unity/18.jpg
+  - /res/projects/black-hole-vfx-unity/17.jpg
+  - /res/projects/black-hole-vfx-unity/16.jpg
+  - /res/projects/black-hole-vfx-unity/15.jpg
+  - /res/projects/black-hole-vfx-unity/10.jpg
+  - /res/projects/black-hole-vfx-unity/9.jpg
+  - /res/projects/black-hole-vfx-unity/8.jpg
+  - /res/projects/black-hole-vfx-unity/7.jpg
+  - /res/projects/black-hole-vfx-unity/6.jpg
+  - /res/projects/black-hole-vfx-unity/5.jpg
+  - /res/projects/black-hole-vfx-unity/4.jpg
+  - /res/projects/black-hole-vfx-unity/3.jpg
+  - /res/projects/black-hole-vfx-unity/2.jpg
+  - /res/projects/black-hole-vfx-unity/1.jpg
 youtubeVideoIds:
   - -5LGCh8JF5g
 title: Black Hole VFX

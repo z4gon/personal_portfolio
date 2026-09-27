@@ -1,21 +1,23 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/character-skin-transition-shader-unity
+thumbnailUrl: /res/projects/character-skin-transition-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/character-skin-transition-shader-unity/thumbnail.gif
 priority: -2
-videosNames:
-  - 12.mp4
-imagesNames:
-  - 11.jpg
-  - 10.jpg
-  - 9.jpg
-  - 8.jpg
-  - 7.jpg
-  - 6.jpg
-  - 5.jpg
-  - 4.jpg
-  - 3.jpg
-  - 2.jpg
-  - 1.jpg
+videosUrls:
+  - /res/projects/character-skin-transition-shader-unity/12.mp4
+imagesUrls:
+  - /res/projects/character-skin-transition-shader-unity/11.jpg
+  - /res/projects/character-skin-transition-shader-unity/10.jpg
+  - /res/projects/character-skin-transition-shader-unity/9.jpg
+  - /res/projects/character-skin-transition-shader-unity/8.jpg
+  - /res/projects/character-skin-transition-shader-unity/7.jpg
+  - /res/projects/character-skin-transition-shader-unity/6.jpg
+  - /res/projects/character-skin-transition-shader-unity/5.jpg
+  - /res/projects/character-skin-transition-shader-unity/4.jpg
+  - /res/projects/character-skin-transition-shader-unity/3.jpg
+  - /res/projects/character-skin-transition-shader-unity/2.jpg
+  - /res/projects/character-skin-transition-shader-unity/1.jpg
 youtubeVideoIds:
   - zwd65lGYHDs
 title: Character Skin Transition Shader

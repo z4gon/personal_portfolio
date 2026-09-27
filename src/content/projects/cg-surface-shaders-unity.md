@@ -1,20 +1,22 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-surface-shaders-unity
-videosNames:
-  - 9.mp4
-  - 8a.mp4
-  - 8b.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 7.mp4
-  - 6.mp4
-  - 2.mp4
-  - 1.mp4
-  - 10.mp4
-imagesNames:
-  - 11.jpg
+thumbnailUrl: /res/projects/cg-surface-shaders-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-surface-shaders-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-surface-shaders-unity/9.mp4
+  - /res/projects/cg-surface-shaders-unity/8a.mp4
+  - /res/projects/cg-surface-shaders-unity/8b.mp4
+  - /res/projects/cg-surface-shaders-unity/5.mp4
+  - /res/projects/cg-surface-shaders-unity/4.mp4
+  - /res/projects/cg-surface-shaders-unity/3.mp4
+  - /res/projects/cg-surface-shaders-unity/7.mp4
+  - /res/projects/cg-surface-shaders-unity/6.mp4
+  - /res/projects/cg-surface-shaders-unity/2.mp4
+  - /res/projects/cg-surface-shaders-unity/1.mp4
+  - /res/projects/cg-surface-shaders-unity/10.mp4
+imagesUrls:
+  - /res/projects/cg-surface-shaders-unity/11.jpg
 youtubeVideoIds:
   - QF2svyMgkRQ
 title: Standard Surface Shaders

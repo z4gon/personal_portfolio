@@ -1,24 +1,26 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/grass-compute-shader-unity
+thumbnailUrl: /res/projects/grass-compute-shader-unity/thumbnail.mp4
+metaImageUrl: /res/projects/grass-compute-shader-unity/thumbnail.gif
 priority: -5
-videosNames:
-  - 11.mp4
-  - 10.mp4
-  - 12b.mp4
-  - 12a.mp4
-  - 9.mp4
-  - 8.mp4
-  - 7b.mp4
-  - 7a.mp4
-  - 6.mp4
-  - 5.mp4
-  - 4.mp4
-  - 3.mp4
-  - 2.mp4
-  - 1.mp4
-imagesNames:
-  - blade.jpg
+videosUrls:
+  - /res/projects/grass-compute-shader-unity/11.mp4
+  - /res/projects/grass-compute-shader-unity/10.mp4
+  - /res/projects/grass-compute-shader-unity/12b.mp4
+  - /res/projects/grass-compute-shader-unity/12a.mp4
+  - /res/projects/grass-compute-shader-unity/9.mp4
+  - /res/projects/grass-compute-shader-unity/8.mp4
+  - /res/projects/grass-compute-shader-unity/7b.mp4
+  - /res/projects/grass-compute-shader-unity/7a.mp4
+  - /res/projects/grass-compute-shader-unity/6.mp4
+  - /res/projects/grass-compute-shader-unity/5.mp4
+  - /res/projects/grass-compute-shader-unity/4.mp4
+  - /res/projects/grass-compute-shader-unity/3.mp4
+  - /res/projects/grass-compute-shader-unity/2.mp4
+  - /res/projects/grass-compute-shader-unity/1.mp4
+imagesUrls:
+  - /res/projects/grass-compute-shader-unity/blade.jpg
 youtubeVideoIds:
   - dsd_pxnuODE
 title: Grass Compute Shader

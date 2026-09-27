@@ -1,26 +1,28 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/3d-animated-character-unity
+thumbnailUrl: /res/projects/3d-animated-character-unity/thumbnail.mp4
+metaImageUrl: /res/projects/3d-animated-character-unity/thumbnail.gif
 priority: -4
-imagesNames:
-  - 34.jpg
-  - 33.jpg
-  - 32.jpg
-  - 31.jpg
-  - 30.jpg
-  - 26.jpg
-  - 24.jpg
-  - 23.jpg
-  - 20.jpg
-  - 16.jpg
-  - 15.jpg
-  - 14.jpg
-  - 10.jpg
-  - 9.jpg
-  - 6.jpg
-  - 4.jpg
-  - 3.jpg
-  - 1.jpg
+imagesUrls:
+  - /res/projects/3d-animated-character-unity/34.jpg
+  - /res/projects/3d-animated-character-unity/33.jpg
+  - /res/projects/3d-animated-character-unity/32.jpg
+  - /res/projects/3d-animated-character-unity/31.jpg
+  - /res/projects/3d-animated-character-unity/30.jpg
+  - /res/projects/3d-animated-character-unity/26.jpg
+  - /res/projects/3d-animated-character-unity/24.jpg
+  - /res/projects/3d-animated-character-unity/23.jpg
+  - /res/projects/3d-animated-character-unity/20.jpg
+  - /res/projects/3d-animated-character-unity/16.jpg
+  - /res/projects/3d-animated-character-unity/15.jpg
+  - /res/projects/3d-animated-character-unity/14.jpg
+  - /res/projects/3d-animated-character-unity/10.jpg
+  - /res/projects/3d-animated-character-unity/9.jpg
+  - /res/projects/3d-animated-character-unity/6.jpg
+  - /res/projects/3d-animated-character-unity/4.jpg
+  - /res/projects/3d-animated-character-unity/3.jpg
+  - /res/projects/3d-animated-character-unity/1.jpg
 youtubeVideoIds:
   - Salca9mhmU8
 title: Modeling/Skinning a 3D Mesh

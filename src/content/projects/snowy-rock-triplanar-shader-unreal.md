@@ -1,25 +1,27 @@
 ---
 date: '2022-11-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/snowy-rock-triplanar-shader-unreal
+thumbnailUrl: /res/projects/snowy-rock-triplanar-shader-unreal/thumbnail.mp4
+metaImageUrl: /res/projects/snowy-rock-triplanar-shader-unreal/thumbnail.gif
 priority: -2
-videosNames:
-  - 1.mp4
-imagesNames:
-  - 24.jpg
-  - 23.jpg
-  - 22.jpg
-  - 18.jpg
-  - 17.jpg
-  - 16.jpg
-  - 15.jpg
-  - 14.jpg
-  - 13.jpg
-  - 12.jpg
-  - 11.jpg
-  - 9.jpg
-  - 25.jpg
-  - 3.jpg
-  - 1.jpg
+videosUrls:
+  - /res/projects/snowy-rock-triplanar-shader-unreal/1.mp4
+imagesUrls:
+  - /res/projects/snowy-rock-triplanar-shader-unreal/24.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/23.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/22.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/18.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/17.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/16.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/15.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/14.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/13.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/12.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/11.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/9.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/25.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/3.jpg
+  - /res/projects/snowy-rock-triplanar-shader-unreal/1.jpg
 youtubeVideoIds:
   - fqMgDGAgQY8
 title: Snowy Rock Shader

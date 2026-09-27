@@ -1,22 +1,24 @@
 ---
 date: '2022-10-01T00:00:00.000Z'
 gitHubUrl: https://github.com/z4gon/gamedev/tree/main/cg-shaping-shaders-unity
-videosNames:
-  - 20.mp4
-  - 19.mp4
-  - 17.mp4
-  - 16b.mp4
-  - 15.mp4
-  - 14.mp4
-  - 13.mp4
-  - 12.mp4
-  - 11b.mp4
-  - 10.mp4
-  - 9.mp4
-  - 8c.mp4
-  - 7.mp4
-  - 6b.mp4
-  - 4.mp4
+thumbnailUrl: /res/projects/cg-shaping-shaders-unity/thumbnail.mp4
+metaImageUrl: /res/projects/cg-shaping-shaders-unity/thumbnail.gif
+videosUrls:
+  - /res/projects/cg-shaping-shaders-unity/20.mp4
+  - /res/projects/cg-shaping-shaders-unity/19.mp4
+  - /res/projects/cg-shaping-shaders-unity/17.mp4
+  - /res/projects/cg-shaping-shaders-unity/16b.mp4
+  - /res/projects/cg-shaping-shaders-unity/15.mp4
+  - /res/projects/cg-shaping-shaders-unity/14.mp4
+  - /res/projects/cg-shaping-shaders-unity/13.mp4
+  - /res/projects/cg-shaping-shaders-unity/12.mp4
+  - /res/projects/cg-shaping-shaders-unity/11b.mp4
+  - /res/projects/cg-shaping-shaders-unity/10.mp4
+  - /res/projects/cg-shaping-shaders-unity/9.mp4
+  - /res/projects/cg-shaping-shaders-unity/8c.mp4
+  - /res/projects/cg-shaping-shaders-unity/7.mp4
+  - /res/projects/cg-shaping-shaders-unity/6b.mp4
+  - /res/projects/cg-shaping-shaders-unity/4.mp4
 youtubeVideoIds:
   - PWh5ksoYrLM
 title: Cg Shaping Shaders
