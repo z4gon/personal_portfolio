@@ -1,0 +1,6 @@
+.markdownContent {
+  :global(a) {
+    color: var(--link-color);
+    font-weight: bold;
+  }
+}
