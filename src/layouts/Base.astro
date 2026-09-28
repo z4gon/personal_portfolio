@@ -8,9 +8,15 @@ interface Props {
   title?: string
   description?: string
   metaImageUrl?: string
+  path?: string
 }
 
-const { title, description, metaImageUrl } = Astro.props
+const {
+  title,
+  description,
+  metaImageUrl,
+  path = Astro.url.pathname,
+} = Astro.props
 
 // track only production builds
 const useAnalytics = import.meta.env.PROD
@@ -24,7 +30,7 @@ const useAnalytics = import.meta.env.PROD
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {/* SEO + social cards: title, description, canonical, og:*, favicon */}
     <Metatags
-      path={Astro.url.pathname}
+      path={path}
       title={title}
       description={description}
       metaImageUrl={metaImageUrl}

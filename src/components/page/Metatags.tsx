@@ -16,6 +16,9 @@ const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {
   const siteUrl = import.meta.env.SITE
 
   const url = new URL(path, siteUrl).toString()
+  // base is ignored if the URL is already absolute
+  const metaImageUrlFull = new URL(metaImageUrl, siteUrl).toString()
+
   return (
     <>
       {/* Primary Meta Tags */}
@@ -28,7 +31,7 @@ const Metatags = ({ path, ...siteOverrides }: MetatagsProps) => {
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={metaImageUrl} />
+      <meta property="og:image" content={metaImageUrlFull} />
 
       {/* Twitter: format only, content falls back to og:* tags */}
       <meta name="twitter:card" content="summary_large_image" />
