@@ -11,6 +11,7 @@ import TagsList from '../../components/project-details/TagsList'
 import YouTubeEmbed from '../../components/project-details/YouTubeEmbed'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
+import Spacer from '../../components/Spacer'
 import formatDate from '../../utils/formatDate'
 import styles from './Project.module.scss'
 
@@ -188,6 +189,8 @@ const {
           )}
         </article>
       </div>
+
+      <Spacer amount="xl" />
     </Container>
   </Page>
 </Base>

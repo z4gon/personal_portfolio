@@ -3,6 +3,11 @@
   width: 100%;
   margin-bottom: 60px;
 
+  // Keeps a 10px gap above the carousel, desktop only.
+  @media screen and (min-width: 701px) {
+    margin-top: 10px;
+  }
+
   .viewport {
     display: flex;
     width: 100%;
