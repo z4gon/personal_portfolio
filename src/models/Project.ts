@@ -1,3 +1,4 @@
+import { getCollection } from 'astro:content'
 import { z } from 'astro/zod'
 import Category from './enums/Category'
 import Tag from './enums/Tag'
@@ -9,28 +10,32 @@ export const linkSchema = z.object({
   text: z.string(),
 })
 
-// Frontmatter; `id` comes from the file name, and asset URLs are resolved after loading.
+// Frontmatter; the collection id comes from the file name.
 export const projectSchema = z.object({
-  // prevent dead links when a project slug is renamed
+  // prevent dead links when a project id is renamed
   aliases: z.array(z.string()).optional(),
 
   priority: z.number().default(0),
 
   title: z.string(),
-  date: z.coerce.date(),
+  date: z.string(),
 
   // metadata
   tags: z.array(z.enum(Tag)),
   technology: z.enum(Technology).optional(),
   category: z.enum(Category),
 
+  // metadata
+  thumbnailUrl: z.string(),
+  metaImageUrl: z.string(),
+
   // hero
-  heroImageName: z.string().optional(),
-  heroVideoName: z.string().optional(),
+  heroImageUrl: z.string().optional(),
+  heroVideoUrl: z.string().optional(),
 
   // carousel
-  imagesNames: z.array(z.string()).optional(),
-  videosNames: z.array(z.string()).optional(),
+  imagesUrls: z.array(z.string()).optional(),
+  videosUrls: z.array(z.string()).optional(),
 
   subtitle: z.string(),
   description: z
@@ -41,7 +46,6 @@ export const projectSchema = z.object({
 
   links: z.array(linkSchema).optional(),
   gitHubUrl: z.string().optional(),
-  isPrivateRepo: z.boolean().optional(),
 
   // store links
   appleAppStoreUrl: z.string().optional(),
@@ -52,25 +56,24 @@ export const projectSchema = z.object({
   youtubeVideoIds: z.array(z.string()).optional(),
 })
 
-export type Project = z.infer<typeof projectSchema>
-
-export type ProjectFull = Omit<
-  Project,
-  'heroImageName' | 'heroVideoName' | 'imagesNames' | 'videosNames'
-> & {
-  id: string
-
-  thumbnailUrl: string
-  metaImageUrl: string
-
-  heroImageUrl?: string
-  heroVideoUrl?: string
-
-  imagesUrls?: string[]
-  videosUrls?: string[]
-}
+type Project = z.infer<typeof projectSchema>
 
 export type ProjectPreview = Pick<
-  ProjectFull,
-  'id' | 'title' | 'thumbnailUrl' | 'technology'
->
+  Project,
+  'title' | 'thumbnailUrl' | 'technology' | 'category' | 'priority'
+> & { id: string }
+
+export const getProjectPreviews = async (): Promise<ProjectPreview[]> => {
+  const entries = await getCollection('projects')
+
+  return entries
+    .map(({ id, data }) => ({
+      id,
+      title: data.title,
+      thumbnailUrl: data.thumbnailUrl,
+      technology: data.technology,
+      category: data.category,
+      priority: data.priority,
+    }))
+    .sort((a, b) => a.priority - b.priority)
+}
