@@ -6,6 +6,7 @@ heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-0-demo-template-guis/1.mp4'
 date: '2023-07-08T00:00:00.000Z'
 author: 'z4gon'
+visible: false
 ---
 
 ## Source Code

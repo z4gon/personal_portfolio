@@ -6,6 +6,7 @@ import { z } from 'astro/zod'
 export const blogPostSchema = z.object({
   title: z.string(),
   date: z.string(),
+  visible: z.boolean().default(true),
 
   author: z.string(),
 
@@ -29,6 +30,7 @@ export const getBlogPostPreviews = async (): Promise<BlogPostPreview[]> => {
   const entries = await getCollection('blog')
 
   return entries
+    .filter(({ data }) => data.visible)
     .map(({ id, data }) => ({
       id,
       title: data.title,

@@ -6,6 +6,7 @@ heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-1-camera-viewport-point-to-ray/1.mp4'
 date: '2023-05-29T00:00:00.000Z'
 author: 'z4gon'
+visible: false
 ---
 
 ## References

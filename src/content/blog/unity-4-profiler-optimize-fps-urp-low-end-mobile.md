@@ -5,6 +5,7 @@ heroImageUrl: '/res/blog/unity-4-profiler-optimize-fps-urp-low-end-mobile/2.jpg'
 heroImageCreditUrl: ''
 date: '2023-06-01T00:00:00.000Z'
 author: 'z4gon'
+visible: false
 ---
 
 ## References

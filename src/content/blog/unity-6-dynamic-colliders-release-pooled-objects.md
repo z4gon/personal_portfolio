@@ -6,6 +6,7 @@ heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-6-dynamic-colliders-release-pooled-objects/1.mp4'
 date: '2023-06-03T01:00:00.000Z'
 author: 'z4gon'
+visible: false
 ---
 
 ## References

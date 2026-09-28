@@ -6,6 +6,7 @@ heroImageCreditUrl: ''
 heroVideoUrl: '/res/blog/unity-2-input-system-package-raycast/1.mp4'
 date: '2023-05-29T01:00:00.000Z'
 author: 'z4gon'
+visible: false
 ---
 
 ## References
