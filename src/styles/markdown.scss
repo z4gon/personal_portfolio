@@ -62,6 +62,11 @@
     padding: 1em;
     counter-reset: line; // reset on each code block
 
+    // JetBrains Mono for code blocks (UA sets monospace on pre and code directly)
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-ligatures: none;
+    line-height: 1.6;
+
     // dont hash .line, so it matches astro/shiki
     :global(.line)::before {
       counter-increment: line; // increment on each line
@@ -74,6 +79,8 @@
     }
 
     code {
+      font-family: inherit;
+
       // Bypass the browser's 13px monospace default.
       font-size: 1em;
     }

@@ -9,4 +9,9 @@ export default defineConfig({
       compat: true, // render React components
     }),
   ],
+  markdown: {
+    shikiConfig: {
+      theme: 'one-dark-pro',
+    },
+  },
 })
