@@ -131,16 +131,16 @@
   }
 
   @media screen and (max-width: 500px) {
-    .title {
+    .card .header .information .title {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
       height: 5em;
       margin-bottom: 30px;
-    }
 
-    .date {
-      margin-left: 0;
+      .date {
+        margin-left: 0;
+      }
     }
   }
 }
