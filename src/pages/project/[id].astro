@@ -1,5 +1,5 @@
 ---
-import { render, type CollectionEntry } from 'astro:content'
+import { getCollection, render, type CollectionEntry } from 'astro:content'
 import Container from '../../components/page/Container'
 import GitHubIcon from '../../components/icons/GitHubIcon'
 import MultimediaCarousel from '../../components/media-carousel/MultimediaCarousel'
@@ -11,18 +11,17 @@ import TagsList from '../../components/project-details/TagsList'
 import YouTubeEmbed from '../../components/project-details/YouTubeEmbed'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
-import { getProjectEntries } from '../../models/Project'
 import formatDate from '../../utils/formatDate'
 import styles from './Project.module.scss'
 
 export async function getStaticPaths() {
-  const entries = await getProjectEntries()
+  const entries = await getCollection('projects')
 
   return entries.flatMap((entry) => {
-    const canonicalSlug = entry.slug
+    const canonicalId = entry.id
 
-    return [canonicalSlug, ...(entry.data.aliases ?? [])].map((slug) => ({
-      params: { slug },
+    return [canonicalId, ...(entry.data.aliases ?? [])].map((id) => ({
+      params: { id },
       props: { entry },
     }))
   })
@@ -120,7 +119,7 @@ const {
                 )}
                 {title}
                 <Tag className={styles.date} secondary>
-                  {formatDate(date, true)}
+                  {formatDate(new Date(date), true)}
                 </Tag>
               </h1>
               <span class={styles.subtitle}>{subtitle}</span>

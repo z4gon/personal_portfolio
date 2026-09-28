@@ -4,15 +4,14 @@ import Container from '../../components/page/Container'
 import Spacer from '../../components/Spacer'
 import Base from '../../layouts/Base.astro'
 import Page from '../../layouts/Page.astro'
-import { getBlogPostEntries } from '../../models/BlogPost'
-import { render } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const entries = await getBlogPostEntries()
+  const entries = await getCollection('blog')
 
   return entries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { id: entry.id },
     props: { entry },
   }))
 }
@@ -25,7 +24,7 @@ const { Content } = await render(entry)
   <Page>
     <Container wide={false}>
       <Spacer amount="xl" />
-      <Post post={{ slug: entry.slug, ...entry.data }}>
+      <Post post={{ id: entry.id, ...entry.data }}>
         <Content />
       </Post>
       <Spacer amount="xl" />
