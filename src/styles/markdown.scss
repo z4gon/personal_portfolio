@@ -1,0 +1,85 @@
+@mixin content {
+  padding: 1em;
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  img {
+    margin: 1em 0 1em;
+    line-height: 1.4em;
+  }
+
+  img {
+    max-height: 480px;
+  }
+
+  ul,
+  ol {
+    margin-left: 1.2em;
+
+    ul,
+    ol {
+      margin-left: 1.6em;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0.6em 0 0.6em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
+  h5 {
+    font-size: 1.4em;
+  }
+
+  h6 {
+    font-size: 1.2em;
+  }
+
+  a {
+    color: var(--link-color);
+    font-weight: bold;
+  }
+
+  pre {
+    margin: 2em 0;
+    padding: 1em;
+    counter-reset: line; // reset on each code block
+
+    // dont hash .line, so it matches astro/shiki
+    :global(.line)::before {
+      counter-increment: line; // increment on each line
+      content: counter(line); // render the line number
+      display: inline-block;
+      margin-right: 1.25em;
+      width: 1.5em;
+      text-align: right;
+      color: var(--text-color-secondary);
+    }
+
+    code {
+      // Bypass the browser's 13px monospace default.
+      font-size: 1em;
+    }
+  }
+
+  hr {
+    margin: 4em 0;
+  }
+}

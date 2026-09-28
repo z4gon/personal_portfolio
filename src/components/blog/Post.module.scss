@@ -1,6 +1,5 @@
+@use '../../styles/markdown' as markdown;
+
 .markdownContent {
-  :global(a) {
-    color: var(--link-color);
-    font-weight: bold;
-  }
+  @include markdown.content;
 }

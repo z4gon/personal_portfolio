@@ -1,3 +1,9 @@
+@use '../../styles/markdown' as markdown;
+
+.markdownContent {
+  @include markdown.content;
+}
+
 .details {
   display: flex;
   flex-direction: column;
