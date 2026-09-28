@@ -38,11 +38,7 @@ export const projectSchema = z.object({
   videosUrls: z.array(z.string()).optional(),
 
   subtitle: z.string(),
-  description: z
-    .array(z.string())
-    .nullish()
-    .transform((value) => value ?? []),
-  implementationDetails: z.array(z.string()),
+  details: z.array(z.string()).default([]),
 
   links: z.array(linkSchema).optional(),
   gitHubUrl: z.string().optional(),
@@ -60,8 +56,15 @@ type Project = z.infer<typeof projectSchema>
 
 export type ProjectPreview = Pick<
   Project,
-  'title' | 'thumbnailUrl' | 'technology' | 'category' | 'priority'
-> & { id: string }
+  | 'title'
+  | 'tags'
+  | 'technology'
+  | 'category'
+  | 'subtitle'
+  | 'details'
+  | 'thumbnailUrl'
+  | 'priority'
+> & { id: string; matchedTexts?: string[] }
 
 export const getProjectPreviews = async (): Promise<ProjectPreview[]> => {
   const entries = await getCollection('projects')
@@ -70,9 +73,12 @@ export const getProjectPreviews = async (): Promise<ProjectPreview[]> => {
     .map(({ id, data }) => ({
       id,
       title: data.title,
+      tags: data.tags,
       thumbnailUrl: data.thumbnailUrl,
       technology: data.technology,
       category: data.category,
+      subtitle: data.subtitle,
+      details: data.details,
       priority: data.priority,
     }))
     .sort((a, b) => a.priority - b.priority)

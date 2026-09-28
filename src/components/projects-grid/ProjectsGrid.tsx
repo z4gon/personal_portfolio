@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks'
+import { useEffect, useState } from 'preact/hooks'
 import type { ProjectPreview } from '../../models/Project'
 import Button from '../Button'
 import ProjectCard from './ProjectCard'
@@ -21,6 +21,10 @@ const ProjectsGrid = ({
   pageJump = PAGE_JUMP,
 }: ProjectsGridProps) => {
   const [page, setPage] = useState(0)
+
+  useEffect(() => {
+    setPage(0)
+  }, [projects])
 
   const hasNext = projects.length > (page + 1) * pageSize
 

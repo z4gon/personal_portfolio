@@ -3,35 +3,17 @@ import Base from '../layouts/Base.astro'
 import Page from '../layouts/Page.astro'
 import Container from '../components/page/Container'
 import Spacer from '../components/Spacer'
-import ProjectsGrid from '../components/projects-grid/ProjectsGrid'
-import Category from '../models/enums/Category'
+import ProjectsCategories from '../components/projects-grid/ProjectsCategories'
 import { getProjectPreviews } from '../models/Project'
 
-const PAGE_SIZE = 8
-const categories = [
-  Category.GameDev,
-  Category.Shaders,
-  Category.VisualEffects,
-  Category.ComputeShaders,
-]
-
 const projects = await getProjectPreviews()
-const projectsByCategory = categories.map((category) =>
-  projects.filter((project) => project.category === category),
-)
 ---
 
 <Base>
   <Page>
     <Container>
       <Spacer amount="lg" />
-      {projectsByCategory.map((categoryProjects) => (
-        <ProjectsGrid
-          projects={categoryProjects}
-          pageSize={PAGE_SIZE}
-          client:load
-        />
-      ))}
+      <ProjectsCategories projects={projects} client:load />
       <Spacer amount="xl" />
     </Container>
   </Page>

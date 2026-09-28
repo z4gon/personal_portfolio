@@ -35,6 +35,31 @@
       }
     }
 
+    .matchedTexts {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 4px 7px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.75);
+        color: white;
+        font-size: 0.75em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
     .information {
       position: absolute;
       bottom: 0;

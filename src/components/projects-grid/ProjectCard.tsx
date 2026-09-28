@@ -9,6 +9,7 @@ const ProjectCard = ({
   thumbnailUrl,
   title,
   technology,
+  matchedTexts,
 }: ProjectCardProps) => {
   return (
     <Link href={`/project/${id}`} className={styles.link}>
@@ -18,6 +19,17 @@ const ProjectCard = ({
             <source src={thumbnailUrl} type="video/mp4" />
           </video>
         </div>
+
+        {matchedTexts && matchedTexts.length > 0 && (
+          <ul
+            className={styles.matchedTexts}
+            aria-label="Why this project matched your search"
+          >
+            {matchedTexts.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
+          </ul>
+        )}
 
         <div className={styles.information}>
           {technology && (

@@ -9,6 +9,7 @@
 ## Code style
 
 - Use `className` (not `class`) for JSX attributes in Preact components, so the code stays consistent and React-portable.
+- Avoid magic numbers; extract numeric constants into clearly named `CONST_VARS` using uppercase snake case.
 - Name component prop interfaces `{Component}Props` (e.g. `ButtonProps`), not bare `Props`.
 - Combine class-name values with the `classNames` utility (`src/utils/classNames`).
 - Use the `Link` component (`src/components/Link`) instead of raw `<a>` elements in Preact components.

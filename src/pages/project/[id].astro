@@ -39,8 +39,7 @@ const {
   title,
   subtitle,
   date,
-  description,
-  implementationDetails,
+  details,
   imagesUrls,
   videosUrls,
   metaImageUrl,
@@ -59,7 +58,7 @@ const {
 
 <Base
   title={`${title} | Project`}
-  description={description.join('') || subtitle}
+  description={details[0] || subtitle}
   metaImageUrl={metaImageUrl}
   path={`/project/${entry.id}`}
 >
@@ -160,27 +159,16 @@ const {
             </ProjectDetailsSection>
           )}
 
-          {/* Project overview paragraphs. */}
-          {description.length > 0 && (
-            <ProjectDetailsSection className={styles.description}>
-              {description.map((paragraph) => (
-                <p class={styles.descriptionItem}>{paragraph}</p>
-              ))}
+          {/* Project details. */}
+          {details.length > 0 && !hasMarkdownContent && (
+            <ProjectDetailsSection title="Details">
+              <ul class={styles.detailsList}>
+                {details.map((detail) => (
+                  <li class={styles.bullet}>{detail}</li>
+                ))}
+              </ul>
             </ProjectDetailsSection>
           )}
-
-          {/* Technical implementation notes. */}
-          {implementationDetails &&
-            implementationDetails.length > 0 &&
-            !hasMarkdownContent && (
-              <ProjectDetailsSection title="Implementation">
-                <ul class={styles.implementationDetails}>
-                  {implementationDetails.map((detail) => (
-                    <li class={styles.bullet}>{detail}</li>
-                  ))}
-                </ul>
-              </ProjectDetailsSection>
-            )}
 
           {hasMarkdownContent && (
             <div class={styles.markdownContent}>
