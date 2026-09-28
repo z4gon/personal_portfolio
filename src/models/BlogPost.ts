@@ -19,10 +19,7 @@ export const blogPostSchema = z.object({
 
 type BlogPost = z.infer<typeof blogPostSchema>
 
-export type BlogPostPreview = Pick<
-  BlogPost,
-  'title' | 'excerpt' | 'heroImageUrl'
-> & {
+export type BlogPostPreview = Pick<BlogPost, 'title' | 'heroImageUrl'> & {
   id: string
   date: string
   author: string
@@ -36,8 +33,7 @@ export const getBlogPostPreviews = async (): Promise<BlogPostPreview[]> => {
       id,
       title: data.title,
       author: data.author,
-      date: new Date(data.date).toISOString(),
-      excerpt: data.excerpt,
+      date: data.date,
       heroImageUrl: data.heroImageUrl,
     }))
     .sort((a, b) => b.date.localeCompare(a.date))

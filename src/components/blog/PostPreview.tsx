@@ -1,36 +1,25 @@
-import classNames from '../../utils/classNames'
-import type { Author } from '../../models/Author'
+import type { BlogPostPreview } from '../../models/BlogPost'
+import { authors } from '../../config'
 import Link from '../link/Link'
 import Avatar from './Avatar'
 import DateFormatter from './DateFormatter'
 import styles from './PostPreview.module.scss'
 
-interface PostPreviewProps {
-  isHero?: boolean
-  title: string
-  heroImageUrl: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
-}
+type PostPreviewProps = BlogPostPreview
 
 const PostPreview = ({
-  isHero = false,
   title,
   heroImageUrl,
   date,
   author,
-  slug,
+  id,
 }: PostPreviewProps) => {
+  const authorData = authors[author]
+
   return (
-    <section
-      className={classNames(styles.postPreview, {
-        [styles.hero]: isHero,
-      })}
-    >
+    <section className={styles.postPreview}>
       <div className={styles.imageWrapper}>
-        <Link href={`/blog/${slug}`} aria-label={title}>
+        <Link href={`/blog/${id}`} aria-label={title}>
           <div
             className={styles.image}
             style={{ backgroundImage: `url(${heroImageUrl})` }}
@@ -39,10 +28,14 @@ const PostPreview = ({
       </div>
       <div className={styles.info}>
         <h3 className={styles.title}>
-          <Link href={`/blog/${slug}`}>{title}</Link>
+          <Link href={`/blog/${id}`}>{title}</Link>
         </h3>
         <div className={styles.authorAndDate}>
-          <Avatar name={author.name} pictureUrl={author.pictureUrl} small />
+          <Avatar
+            name={authorData.name}
+            pictureUrl={authorData.pictureUrl}
+            small
+          />
           <DateFormatter dateString={date} />
         </div>
       </div>

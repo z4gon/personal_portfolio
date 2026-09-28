@@ -1,20 +1,11 @@
 import { useState } from 'preact/hooks'
-import type { Author } from '../../models/Author'
+import type { BlogPostPreview } from '../../models/BlogPost'
 import Button from '../Button'
 import PostPreview from './PostPreview'
 import styles from './PostsGrid.module.scss'
 
-export interface BlogPostPreviewData {
-  slug: string
-  title: string
-  date: string
-  author: Author
-  excerpt: string
-  heroImageUrl: string
-}
-
 interface PostsGridProps {
-  posts: BlogPostPreviewData[]
+  posts: BlogPostPreview[]
 }
 
 const PAGE_SIZE = 20
@@ -33,7 +24,7 @@ const PostsGrid = ({ posts }: PostsGridProps) => {
     <section className={styles.postsGrid}>
       <div className={styles.grid}>
         {previewsShowing.map((post) => (
-          <PostPreview key={post.slug} {...post} />
+          <PostPreview key={post.id} {...post} />
         ))}
       </div>
       {hasNext && (

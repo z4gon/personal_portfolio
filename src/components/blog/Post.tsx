@@ -1,13 +1,12 @@
 import type { ComponentChildren } from 'preact'
-import type { Author } from '../../models/Author'
 import PostHeader from './PostHeader'
 import styles from './Post.module.scss'
 
 interface BlogPostData {
-  slug: string
+  id: string
   title: string
   date: string
-  author: Author
+  author: string
   excerpt: string
   heroImageUrl: string
   heroImageCreditUrl: string
