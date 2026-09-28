@@ -6,11 +6,11 @@ import {
 import { blogPostSchema } from './models/BlogPost'
 import { projectSchema } from './models/Project'
 
-// id = file path slugified (github-slugger):
+// id = file path normalized (github-slugger):
 //   "My Great Post.md"   -> "my-great-post"  (spaces -> dashes, lowercased)
 //   "camelCasePost.md"   -> "camelcasepost"  (camelCase not split)
 //   "snake_case_name.md" -> "snake_case_name" (underscores kept)
-// Use `generateId` or frontmatter `slug` to override.
+// Use `generateId` or frontmatter `id` to override.
 const blog = defineCollection({
   loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
   schema: blogPostSchema,
