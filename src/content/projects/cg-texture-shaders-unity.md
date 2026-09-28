@@ -12,7 +12,7 @@ youtubeVideoIds:
   - G0M9q3efZ1M
 title: Cg Texture Shaders
 subtitle: Written in Cg with ShaderLab, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Texture manipulation shaders
   - Using the 2D Property type in ShaderLab and the sampler2D data type in Cg.
   - Mapping the uv coordinates to a texel using the tex2D function.

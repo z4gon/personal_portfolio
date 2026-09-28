@@ -7,7 +7,7 @@ heroVideoUrl: /res/projects/tessellation-unity/1.mp4
 title: Tessellation
 subtitle: Tessellation in Unity, both with Cg for Surface Shaders and HDRP with
   Compute Shader
-implementationDetails:
+details:
   - 'In Built-in RP using Surface Shader and the Hull/Domain/Geometry shader
     stages, using the #pragma directive for tessellation.'
   - Exploring limitations of the Metal graphics API for geometry shader stages,

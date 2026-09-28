@@ -17,7 +17,7 @@ imagesUrls:
 heroVideoUrl: /res/projects/bubbles-compute-shader-unity/10.mp4
 title: Bubbles Compute Shader
 subtitle: Written in HLSL, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Dispatching a Compute Shader from the C# Code.
   - Read/Write Render Texture in C# and HLSL to get the output of the Compute
     Shader execution.

@@ -30,7 +30,7 @@ youtubeVideoIds:
 title: Black Hole VFX
 subtitle: Implemented with Shader Graph, Shuriken Particle System and VFX Graph
   for the URP in Unity
-implementationDetails:
+details:
   - Grabbing the pixels from the Color Buffer from the Opaque Texture using the
     Scene Color node.
   - Noise texture to distort the Screen Position and then use it to sample the

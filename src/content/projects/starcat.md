@@ -16,13 +16,12 @@ youtubeVideoIds:
   - 3EQ1cwSD_BY
 title: The Star Cat
 subtitle: Published Mobile Game for iOS & Android
-description:
+details:
   - I was the solo indie developer on the project. Managed everything from
     conception, art & programming until deployment in AppStore and PlayStore.
   - A stylish 2D Side-Scroller with a cat character that shoots a weapon. The
     player has to destroy enemies and avoid obstacles.
   - The game is developed in Unity3D engine.
-implementationDetails:
   - Gameplay programming and behaviors for Unity with C#.
   - Designing architecture for testability and reusability of systems.
   - Dependency injection using Zenject.

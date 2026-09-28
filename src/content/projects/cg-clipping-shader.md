@@ -10,7 +10,7 @@ videosUrls:
 title: Clipping Pixels
 subtitle: Clipping pixels in a Built-in RP shader in Unity, using the Cg
   programming language
-implementationDetails:
+details:
   - Clipping using Perlin Noise.
   - Clipping using cosine function of the Object position of vertices.
   - Shadow casting and culling manipulation.

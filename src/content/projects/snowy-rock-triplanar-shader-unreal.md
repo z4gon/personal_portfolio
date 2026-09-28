@@ -26,7 +26,7 @@ youtubeVideoIds:
   - fqMgDGAgQY8
 title: Snowy Rock Shader
 subtitle: Implemented with Triplanar Projection and Normals Orientation in Unreal Engine
-implementationDetails:
+details:
   - Modeling a Canyon and Rocks in Blender.
   - Importing FBX Static Meshes in Unreal Engine.
   - Setting up the Scene in Unreal Engine.

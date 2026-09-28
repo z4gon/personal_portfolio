@@ -25,7 +25,7 @@ youtubeVideoIds:
   - lGVy9tTWq2E
 title: 'From Scratch: Metal Render Pipeline'
 subtitle: Basic Game Engine using the Metal Graphics API
-implementationDetails:
+details:
   - 'Part 1: Setting up the basic Render Pipeline'
   - 'Part 2: Draw a simple Triangle in the Screen'
   - 'Part 3: Vertex and Fragment Shaders'

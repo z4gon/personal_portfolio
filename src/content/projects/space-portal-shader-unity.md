@@ -20,7 +20,7 @@ youtubeVideoIds:
   - 5jiT4pw0tpE
 title: Space Portal Shader
 subtitle: Written in HLSL using Stencil Buffer, in the Built-in RP for Unity
-implementationDetails:
+details:
   - Modeling the Meshes and UV Mapping in Blender.
   - Creating the Textures in Affinity, for Masking and doing the Tunnel and Glow
     VFX.

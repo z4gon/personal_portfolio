@@ -18,7 +18,7 @@ youtubeVideoIds:
   - r5qDHvfYG9c
 title: Ball of Lava Shader
 subtitle: Written in Cg with ShaderLab, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Using the Perlin Noise algorithm to displace vertices in the mesh, during
     the Vertex Shader Stage.
   - Using _Time to animate the Perlin Noise, also multiplying by _Displacement

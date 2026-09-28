@@ -6,7 +6,7 @@ metaImageUrl: /res/projects/mesh-deformation-compute-shader-unity/thumbnail.gif
 heroVideoUrl: /res/projects/mesh-deformation-compute-shader-unity/1.mp4
 title: Mesh deformation Compute Shader
 subtitle: Written in HLSL, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Extracting vertices and normals information from a Mesh.
   - Using Compute Buffers to store the vertices position and normal information.
   - Setting the Compute Buffer to Compute Shader and the Material.

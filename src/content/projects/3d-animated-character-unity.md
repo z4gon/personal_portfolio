@@ -27,7 +27,7 @@ youtubeVideoIds:
   - Salca9mhmU8
 title: Modeling/Skinning a 3D Mesh
 subtitle: Modeled and Animated in Blender, implemented in Unity
-implementationDetails:
+details:
   - Designing the concept in Affinity Photo, to use as reference when modeling.
   - 3D Modeling the character in Blender.
   - Creating a high poly version and a low poly version of the model.

@@ -25,7 +25,7 @@ youtubeVideoIds:
   - dsd_pxnuODE
 title: Grass Compute Shader
 subtitle: Procedural Grass System with Compute Shaders in Unity
-implementationDetails:
+details:
   - Building a procedural mesh for the Grass Blades, setting vertices, normals
     and indices.
   - Placing randomly generated grass blades given an extent and a density.

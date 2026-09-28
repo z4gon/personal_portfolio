@@ -29,9 +29,8 @@ youtubeVideoIds:
   - ofLYUlhoxAI
 title: Water Caustics Shader
 subtitle: With HLSL and Shader Graph in Unity URP
-description:
+details:
   - Water Caustics Shader with dynamic configurations.
-implementationDetails:
   - Using HLSL to get the Main Light data, including direction, color and
     distance/shadow attenuations.
   - Triplanar Projection + UVs Rotation + Animated UVs Offset implemented in

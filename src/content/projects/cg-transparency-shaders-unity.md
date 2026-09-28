@@ -16,7 +16,7 @@ videosUrls:
   - /res/projects/cg-transparency-shaders-unity/1.mp4
 title: Transparent Shaders
 subtitle: Transparency shaders written in Cg for the Built-in RP in Unity
-implementationDetails:
+details:
   - Standard Surface Shader using alpha:blend to control the transparency.
   - Setting RenderType and Queue to Transparent, and disabling ZWrite.
   - Writing a second Pass for the Surface Shader with alphatest and addshadow,

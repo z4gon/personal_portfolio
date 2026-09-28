@@ -12,7 +12,7 @@ youtubeVideoIds:
   - d1HJ0O3btq0
 title: Perlin Noise Shader
 subtitle: Written in Cg with ShaderLab, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Implement the Perlin Noise Algorithm
   - Slice the surface in a grid of rectangles, given the amount of columns and
     rows.

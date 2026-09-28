@@ -21,7 +21,7 @@ youtubeVideoIds:
   - QF2svyMgkRQ
 title: Standard Surface Shaders
 subtitle: Written in the Cg programming language for Unity Built-In RP
-implementationDetails:
+details:
   - Lambert Lighting, Blinn-Phong Lighting and Custom Lighting models.
   - 'Standard Surface Shaders in Unity using the #pragma directive to define the
     surface function and the lighting model.'

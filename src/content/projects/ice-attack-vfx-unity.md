@@ -18,7 +18,7 @@ youtubeVideoIds:
   - h4akS-e__9E
 title: Ice Attack VFX
 subtitle: With VFX Graph and Shader Graph in Unity for URP
-implementationDetails:
+details:
   - Burst of 3 Delayed Waves utilizing Sub Graphs in VFX Graph.
   - Ground Texture particles.
   - Snow and Spike Meshes particles, with dissolve/fresnel shader.

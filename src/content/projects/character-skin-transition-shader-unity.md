@@ -22,7 +22,7 @@ youtubeVideoIds:
   - zwd65lGYHDs
 title: Character Skin Transition Shader
 subtitle: Implemented with HLSL and ShaderGraph for the URP in Unity
-implementationDetails:
+details:
   - Creating alternative textures in Affinity Photo.
   - Using Shader Graph to setup a Lit Shader Graph, to benefit from the Lighting
     Model to use Metallic, Smoothness and Emission.

@@ -23,7 +23,7 @@ youtubeVideoIds:
   - pybsA5K_S-c
 title: Ground Slash VFX
 subtitle: With VFX Graph in Unity for URP
-implementationDetails:
+details:
   - Modeling of the 3D Meshes for the Slash and the Debris.
   - UV Mapping for the gradient texture of the Slash mesh.
   - Utilize VFX Graph

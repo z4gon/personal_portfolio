@@ -7,7 +7,7 @@ heroVideoUrl: /res/projects/cg-stencil-buffer-unity/1.mp4
 title: X-Ray Stencil Buffer
 subtitle: X-Ray shader using the stencil buffer in Unity 2021.3.10f1 Built-in RP
   written in the Cg programming language
-implementationDetails:
+details:
   - Using the Stencil Buffer to write a reference value for later check in other
     shaders.
   - Culling Front and Back for controlling which faces of the cube should render.

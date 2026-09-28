@@ -17,10 +17,9 @@ youtubeVideoIds:
   - P3s1gVc3-zM
 title: Metroidvania Game in Godot Engine
 subtitle: Made with Godot Engine 3.5.1
-description:
+details:
   - Prototype to learn the basics of the Godot Engine, Scene Graph, Resources,
     Packed Scenes, Animations, Nodes and GDScript.
-implementationDetails:
   - Player Movement, Jump, Air Jump, Wall Slide and Gravity implemented with
     Kinematic Rigid Body 2D.
   - Player Sprite Animations using Animation Players and Camera Fllow Behaviour

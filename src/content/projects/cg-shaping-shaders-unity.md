@@ -23,7 +23,7 @@ youtubeVideoIds:
   - PWh5ksoYrLM
 title: Cg Shaping Shaders
 subtitle: Written in Cg with ShaderLab, for the Built-in RP in Unity
-implementationDetails:
+details:
   - Creating simple Unlit Shaders in the Built-in RP in Unity.
   - Using the uniform _Time to define sinusoidal functions.
   - ShaderLab to link the Cg program with the Unity Editor, to expose properties

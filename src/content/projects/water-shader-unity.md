@@ -20,10 +20,9 @@ youtubeVideoIds:
   - S920GVHesBM
 title: Water Shader
 subtitle: With Shader Graph in Unity URP
-description:
+details:
   - Water shader with dynamic configurations, which can simulate several
     environmental effects.
-implementationDetails:
   - Water depth effect using Scene Depth node (Camera Depth Buffer) and Screen
     Position node (Fragment Position)
   - Refractions using Screen Color node to render distorted objects behind the

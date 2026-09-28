@@ -21,7 +21,7 @@ youtubeVideoIds:
   - lmJEb4jdH2Q
 title: Stars and Fireworks UI VFX
 subtitle: Implemented with Shuriken Particle System in Unity
-implementationDetails:
+details:
   - Designing the concept in Affinity Photo, to use the sprites and as reference
     in Unity.
   - Using the UI Particle package by Mob-Sakai, to be able to render Particle

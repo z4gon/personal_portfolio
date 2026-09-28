@@ -18,7 +18,7 @@ youtubeVideoIds:
   - mn22mVaAxvg
 title: Fire VFX
 subtitle: With VFX Graph in Unity for HDRP
-implementationDetails:
+details:
   - Flip book animation using a sprite sheet, a flip book player and normal maps
   - Particles with random velocity, angle, lifetime and evolving size over life.
   - Quads always facing the active camera.

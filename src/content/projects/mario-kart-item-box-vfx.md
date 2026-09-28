@@ -25,7 +25,7 @@ youtubeVideoIds:
   - 5UPacp2vzOk
 title: Mario Kart Item Box VFX
 subtitle: Implemented both with pure HLSL and Shader Graph, for the Universal RP in Unity
-implementationDetails:
+details:
   - Rainbow animation effect, using a grayscale texture to distort the UVs for
     sampling the rainbow colors.
   - Utilizing the _Time built in variable to make the UVs offset with time.

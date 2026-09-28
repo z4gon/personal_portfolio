@@ -10,8 +10,7 @@ imagesUrls:
   - /res/projects/duelyst-2/4.jpg
 title: Duelyst 2
 subtitle: Contract Work as Game Developer / Technical Artist
-description:
-implementationDetails:
+details:
   - Gameplay programming in Godot using Scenes and GDScript + JavaScript/TypeScript.
   - Implemented a suite of automated tests in Godot to facilitate refactoring and new feature development.
   - Writing GLSL Shaders for the Cocos2d-x JavaScript Game Engine and the Godot Engine.

@@ -27,7 +27,7 @@ youtubeVideoIds:
 title: Sci-Fi Shield Shader
 subtitle: Polyhedral sci-fi shield Shader implemented with HLSL/ShaderGraph and
   VFX Graph for the URP in Unity
-implementationDetails:
+details:
   - Modeling the 3D Mesh in Blender and UV Mapping overlapped faces.
   - Creating Textures in Affinity Photo.
   - Integrating the Spaceship Asset from the Assets Store into the Project.
