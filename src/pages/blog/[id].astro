@@ -20,7 +20,11 @@ const { entry } = Astro.props
 const { Content } = await render(entry)
 ---
 
-<Base title={entry.data.title} description={entry.data.excerpt}>
+<Base
+  title={entry.data.title}
+  description={entry.data.excerpt}
+  metaImageUrl={entry.data.heroImageUrl}
+>
   <Page>
     <Container wide={false}>
       <Spacer amount="xl" />

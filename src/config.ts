@@ -13,8 +13,8 @@ export const authors: Record<string, Author> = {
 export const site = {
   title: `${githubUser} | Portfolio`,
   description: 'Game Development, Graphics Programming & Technical Art.',
-  imagePath: '/thumbnail.gif',
-  faviconPath: '/favicon.ico',
+  metaImageUrl: '/thumbnail.gif',
+  faviconUrl: '/favicon.ico',
 }
 
 // Google Analytics measurement ID
