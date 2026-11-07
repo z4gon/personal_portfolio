@@ -3,19 +3,29 @@
 A portfolio of projects + a blog.
 Implemented with `Astro` + `Preact`.
 
-## Git LFS
+## Prerequisites
 
-This repo uses Git Large File Storage (LFS) for media resources in `public/res/`.
-Install Git LFS before cloning. On macOS:
+- Node.js 25.x (see `.nvmrc`); run `nvm use` to pick it up.
+- Git LFS, for media resources in `public/res/`. Install before cloning, on macOS:
+  ```sh
+  # binary
+  brew install git-lfs
+  # git hooks
+  git lfs install
+  ```
+  LFS assets download automatically on clone. If missing, run `git lfs pull`.
+
+## Setup
 
 ```sh
-brew install git-lfs # binary
-git lfs install # git hooks
+# deterministic install from package-lock.json
+npm ci
+npm run dev
 ```
 
-LFS assets download automatically on clone. If missing, run `git lfs pull`.
+Use `npm install` instead of `npm ci` only when adding or upgrading dependencies.
 
-## Astro
+### Astro telemetry
 
 To disable astro telemetry when working locally, do:
 
